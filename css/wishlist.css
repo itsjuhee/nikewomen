@@ -1,0 +1,81 @@
+@import url(./common.css);
+
+body {background-color: #EEEEEE;}
+main {margin: 80px 0 500px 0;}
+
+
+.wishlist {
+    width: 80%;
+    margin: 0 auto;
+}
+.wishlist > p {
+    margin-bottom: 60px;
+
+    font-size: 24px;
+    font-weight: 600;
+
+    text-align: center;
+}
+
+.wishlist > ul {
+    display: flex;
+
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.wishlist > ul > li {
+    width: 480px; height: 560px;
+    margin-bottom: 32px;
+
+    position: relative;
+}
+
+.wishlist > ul > li > .pro-img > .btn-wish {
+    background: url(../resources/00.header/wishlist-f.png) no-repeat center;
+}
+.wishlist > ul > li > .pro-img > .product-img > img {
+    width: 100%;
+}
+.wishlist > ul > li > .pro-img {
+    width: 100%;
+    position: relative;
+}
+
+
+.wishlist > ul > li > .pro-txt {
+    margin-top: 16px;
+}
+.wishlist > ul > li > .pro-txt > p {
+    margin: 1px 0;
+}
+.wishlist > ul > li > .pro-txt > p:nth-of-type(1) {
+    color: #505050;
+}
+.wishlist > ul > li > .pro-txt > p > span {
+    font-size: 18px;
+    font-weight: 600;
+    margin-right: 2px;
+}
+
+.wishlist > ul > li > .btn {
+    display: flex;
+    justify-content: center;
+}
+.wishlist > ul > li > .btn > span {
+    display: inline-block;
+
+    text-align: center;
+    margin: 32px 8px;
+
+    font-size: 16px;
+    border-radius: 10px;
+}
+.wishlist > ul > li > .btn > span:nth-of-type(1) {
+    padding: 15px 40px;
+    border: 3px solid #000000;
+}
+.wishlist > ul > li > .btn > span:nth-of-type(2) {
+    padding: 18px 40px;
+    background-color: #000000;
+    color: #FFFFFF;
+}

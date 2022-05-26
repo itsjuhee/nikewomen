@@ -1,0 +1,242 @@
+@import url(./common.css);
+
+.main-img {margin: 0 auto;}
+.main-img > img {width: 100%;}
+
+.main-01 {
+    width: 90%;
+    margin: 0 auto;
+    padding: 90px 0;
+}
+
+.main-01-head > h2 {}
+
+.main-01-head > p > img {
+    width: 100%;
+    margin: 32px 0;
+}
+.main-01-head > div {}
+.main-01-head > div > p {
+    text-align: center;
+}
+.main-01-head > div > p:nth-of-type(1) {
+    font-size: 36px;
+}
+.main-01-head > div > p:nth-of-type(2) {
+    margin-top: 12px;
+    font-size: 16px;
+}
+
+.main-01 > ul {
+    margin-top: 240px;
+
+    display: flex;
+    justify-content: space-evenly;
+}
+.main-01 > ul > li {
+    width: 480px; height: 560px;
+    position: relative;
+}
+.main-01 > ul > li > .pro-img > .btn-wish {
+    background: url(../resources/00.header/wishlist.png) no-repeat;
+}
+.main-01 > ul > li > .pro-img > a > img {
+    width: 100%;
+}
+
+.main-01 > ul > li > .pro-img {
+    width: 100%;
+    position: relative;
+}
+.main-01 > ul > li > .pro-img > span {
+    width: 100%; 
+    padding: 30px 180px;
+
+    display: block;
+    position: absolute; left: 0; bottom: 0;
+
+    font-size: 20px; color: #FFFFFF;
+    background-color: rgba(121, 121, 121, 0.5); 
+    opacity: 0%;
+}
+.main-01 > ul > li > .pro-img:hover > span {
+    transition: 0.5s;
+    opacity: 100%;
+}
+
+.main-01 > ul > li > .pro-txt {
+    margin-top: 20px;
+}
+.main-01 > ul > li > .pro-txt > p {
+    margin: 1px 0;
+}
+.main-01 > ul > li > .pro-txt > p:nth-of-type(1) {
+    color: #505050;
+}
+.main-01 > ul > li > .pro-txt > p > span {
+    font-size: 18px;
+    font-weight: 600;
+    margin-right: 2px;
+}
+
+.banner {
+    width: 90%;
+    margin: 0 auto;
+    padding: 90px 0;
+
+    position: relative;
+}
+.banner > img {width: 100%;}
+.banner > div {
+    position: absolute;
+    left: 5%; top: 40%;
+}
+.banner > div > b {
+    font-size: 36px;
+}
+.banner > div > p {
+    line-height: 20px;
+    padding: 8px 0;
+}
+
+
+.main-02 {
+    width: 90%;
+    margin: 0 auto;
+    padding: 90px 0;
+}
+.main-02 > h2 {}
+.main-02 > ul {
+    margin-top: 32px;
+
+    display: flex;
+    justify-content: space-evenly;
+}
+.main-02 > ul > li {
+    width: 400px; height: 457px;
+    position: relative;
+}
+
+
+.main-02 > ul > li > .pro-img > a > img {
+    width: 100%;
+}
+.main-02 > ul > li > .pro-img {
+    width: 100%;
+    position: relative;
+}
+.main-02 > ul > li > .pro-img > span {
+    width: 100%; 
+    padding: 30px 150px;
+
+    display: block;
+    position: absolute; left: 0; bottom: 0;
+
+    font-size: 16px; color: #FFFFFF;
+    background-color: rgba(121, 121, 121, 0.5); 
+    opacity: 0%;
+}
+.main-02 > ul > li > .pro-img:hover > span {
+    transition: 0.5s;
+    opacity: 100%;           
+}
+
+
+
+
+
+.main-02 > ul > li > .pro-txt {
+    margin-top: 20px;
+}
+.main-02 > ul > li > .pro-txt > p {
+    margin: 1px 0;
+}
+.main-02 > ul > li > .pro-txt > p:nth-of-type(1) {
+    color: #505050;
+}
+.main-02 > ul > li > div > p > span {
+    font-size: 18px;
+    font-weight: 600;
+    margin-right: 2px;
+}
+
+
+
+
+
+.main-03 {
+    width: 80%;
+    margin: 0 auto;
+    padding: 90px 0;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 400px;
+    gap: 20px;
+}
+.main-03 > p {
+    
+}
+.main-03 > p > img {
+    object-fit: cover;
+    width: 100%; height: 100%;
+}
+.main-03 > .img01 {
+    grid-column: 1;
+    grid-row: 1 / 3;
+}
+.main-03 > .img02 {
+    grid-column: 2;
+    grid-row: 1 / 2;
+}
+.main-03 > .img03 {
+    grid-column: 3;
+    grid-row: 1 / 3;
+}
+.main-03 > .img04 {
+    grid-column: 1;
+    grid-row: 3 / 4;
+}
+.main-03 > .img05 {
+    grid-column: 2;
+    grid-row: 2 / 4;
+}
+.main-03 > .img06 {
+    grid-column: 3;
+    grid-row: 3 / 4;
+}
+
+
+/* <!-- mobileeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee --> */
+@media (max-width: 767px) {
+    
+.web {display: none;}
+
+.mobile main {
+    width: 100%;
+    position: relative;
+}
+.m-main-img > img {
+    width: 100%;
+}
+
+.m-ind {
+    position: absolute;
+    right: 2%; bottom: 1%;
+}
+.m-ind > span {
+    width: 8px; height: 8px;
+    margin: 4px;
+    background-color: #dbdbdb;
+    border-radius: 100%;
+    display: block;
+}
+.m-ind > span:nth-of-type(4) {
+    background-color: #797979;
+}
+
+
+
+
+
+}

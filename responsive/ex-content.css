@@ -1,0 +1,39 @@
+.content {
+    width: 80%;
+    margin: 100px auto;
+    
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.content > figure {
+    width: 48%;
+    margin: 0;
+}
+.content > figure > img {width: 100%;}
+
+/* =========== mobile ========== */
+@media (max-width: 768px) {
+    .content {
+        width: 100%;
+        flex-direction: column;
+    }
+    
+    /* column 값으로 조정 후 사이즈 조정 */
+
+    .content > figure {
+        width: 100%;
+    }
+}
+
+@media print {
+    header, footer {display: none;}
+    .content figure:nth-child(2) {display: none;}
+}
+
+/* 
+분기점
+모바일 (320 ~ 767)
+테블릿 (768 ~ 1024)
+데스크탑 (1025 ~ 1920 최적화 사이즈까지)
+ */

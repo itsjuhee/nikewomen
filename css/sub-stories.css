@@ -1,0 +1,226 @@
+@import url(./common.css);
+
+main {margin: 80px 0 500px 0;}
+
+main > .sub-stories-header {
+    width: 92%; height: 580px; 
+    margin: 0 auto;
+}
+
+main > .sub-stories-header > div {}
+main > .sub-stories-header > img {width: 100%;}
+main > .sub-stories-header > p {
+    text-align: center;
+    margin-top: 32px;
+    font-size: 24px;
+}
+
+.stories {
+    margin: 240px 0 360px 130px;
+}
+.stories > ul {}
+.stories > ul > li {margin-bottom: 240px;}
+.stories > ul > li > .sto-main {
+    width: 90%;
+
+    display: flex;
+}
+.stories > ul > li > .sto-main > .sto-main-img {
+    width: 78%;
+}
+.stories > ul > li > .sto-main > .sto-main-img > img {
+    width: 100%;
+}
+.stories > ul > li > .sto-main > div {
+    width: 32%;
+    margin-left: 40px;
+}
+.stories > ul > li > .sto-main > div > h2 {
+    margin: 16px 0;
+}
+.stories > ul > li > .sto-main > div > span {
+    font-size: 24px;
+    color: #595959;
+}
+.stories > ul > li > .sto-main > div > p {
+    margin-top: 24px;
+    font-size: 16px;
+    color: #595959;
+}
+.stories > ul > li > .sto-img::-webkit-scrollbar {
+    display: none;
+}
+.stories > ul > li > .sto-img {
+    margin-top: 40px;
+    display: flex;
+
+    overflow-x: auto;
+    width: 1800px;
+}
+.stories > ul > li > .sto-img > p {
+    width: 28%;
+    margin-right: 40px;
+    flex-shrink: 0;
+}
+.stories > ul > li > .sto-img > p > img {
+    width: 100%;
+}
+
+.more-sto {
+    margin: 0 auto;
+    width: 70%;
+}
+.more-sto > h3 {
+    font-size: 32px;
+    text-align: center;
+}
+.more-sto > ul {
+    margin: 20px 0;
+
+    display: flex;
+    justify-content: space-between;
+}
+.more-sto > ul > li {
+    width: 30%;
+}
+
+
+.more-sto > ul > li > p > img {
+    width: 100%;
+}
+.more-sto > ul > li > span {
+    font-size: 24px;
+    padding: 12px 0;
+    display: block;
+}
+.more-sto > ul > li > p {
+color: #797979;
+}
+
+
+
+
+/* <!-- mobileeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee --> */
+
+@media (max-width: 767px) {
+    
+main {margin: 10% 0 40% 0;}
+
+main > .sub-stories-header {
+    display: none;
+    height: 0;
+}
+.m-sub-stories-header > p {
+    font-size: 20px;
+    font-weight: 300;
+
+    text-align: center;
+
+    margin-bottom: 30px;
+}
+.stories {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.stories > ul > li {
+    display: flex;
+    flex-direction: column;
+
+    margin-bottom: 60px;
+}
+
+.stories > ul > li > .sto-main {
+    width: 100%;
+
+    display: contents;
+    flex-direction: column;
+}
+.stories > ul > li > .sto-main > div {
+    width: 100%;
+    margin: 0;
+
+    order: 3;
+}
+.stories > ul > li > .sto-main > .sto-main-img {
+    width: 100%;
+    
+    order: 1;
+}
+
+.stories > ul > li > .sto-img {
+    margin-top: 12px;
+    display: flex;
+
+    overflow-x: auto;
+    width: 100%;
+
+    order: 2;
+}
+.stories > ul > li > .sto-img > p {
+    width: 50%;
+    margin-right: 5%;
+    flex-shrink: 0;
+}
+
+.stories > ul > li > .sto-main > div > h2 {
+    margin: 6px 0;
+    font-size: 24px;
+}
+.stories > ul > li > .sto-main > div > span {
+    font-size: 16px;
+    color: #595959;
+}
+.stories > ul > li > .sto-main > div > p {
+    margin-top: 12px;
+    font-size: 14px;
+    color: #595959;
+}
+
+
+.more-sto {
+    width: 90%;
+}
+.more-sto > h3 {
+    font-size: 24px;
+    text-align: center;
+}
+.more-sto > ul {
+    margin: 20px 0;
+    display: block;
+}
+.more-sto > ul::after {
+    content: '';
+    clear: both;
+    display: block;
+}
+.more-sto > ul > li {
+    
+    float: left;
+}
+.more-sto > ul > li:nth-of-type(1) {width: 66%;}
+.more-sto > ul > li:nth-of-type(2) {
+    width: 32.5%;
+    margin-left: 1%;
+}
+.more-sto > ul > li:nth-of-type(3) {
+    width: 32.5%;
+    margin-left: 1%; margin-top: 1%;
+}
+
+
+.more-sto > ul > li > p > img {
+    width: 100%;
+}
+.more-sto > ul > li > span {
+    display: none;
+}
+.more-sto > ul > li > p:nth-of-type(2) {
+    display: none;
+}
+
+
+
+
+
+}
