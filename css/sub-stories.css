@@ -109,7 +109,9 @@ main > .sub-stories-header > p {
 /* <!-- mobileeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee --> */
 
 @media (max-width: 767px) {
-    
+
+.mobile h1 {display: none;}
+
 main {margin: 10% 0 40% 0;}
 
 main > .sub-stories-header {

@@ -187,6 +187,7 @@ footer > .details > .ins > p {color: #FFFFFF;}
     
 main {margin: 10% 0 40% 0;}
 
+.mobile h1 {display: none;}
 
 main > .collection > ul > li {
     width: 100%; height: 60%;
