@@ -24,8 +24,7 @@ main {margin: 80px 0 500px 0;}
     justify-content: space-between;
 }
 .wishlist > ul > li {
-    width: 480px; height: 560px;
-    margin-bottom: 32px;
+    width: 480px;
 
     position: relative;
 }
@@ -58,24 +57,56 @@ main {margin: 80px 0 500px 0;}
 }
 
 .wishlist > ul > li > .btn {
+
+    margin: 20% 0;
     display: flex;
     justify-content: center;
 }
 .wishlist > ul > li > .btn > span {
-    display: inline-block;
-
     text-align: center;
-    margin: 32px 8px;
+
+    padding: 15px 40px;
+    margin: 0 12px;
 
     font-size: 16px;
     border-radius: 10px;
-}
-.wishlist > ul > li > .btn > span:nth-of-type(1) {
-    padding: 15px 40px;
     border: 3px solid #000000;
 }
+
 .wishlist > ul > li > .btn > span:nth-of-type(2) {
-    padding: 18px 40px;
     background-color: #000000;
     color: #FFFFFF;
+}
+
+
+/* <!-- mobileeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee --> */
+@media (min-width: 768px) and (max-width: 1920px) {
+
+}
+
+@media (max-width: 767px) {
+    
+main {margin: 10% 0;}
+
+.wishlist {width: 90%;}
+
+.wishlist > ul > li {
+    margin: 0 auto 30%;
+}
+.wishlist > ul > li > .btn {
+    margin: 10% 0;
+
+    display: flex;
+    justify-content: center;
+}
+.wishlist > ul > li > .btn > span {
+    text-align: center;
+
+    padding: 4% 8%;
+    margin: 0 12px;
+
+    font-size: 14px;
+}
+
+
 }

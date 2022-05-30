@@ -11,9 +11,12 @@ main {margin: 80px 0 500px 0;}
 h2 {
     text-align: center;
     margin-bottom: 32px;
+
+    font-size: 24px;
+    font-weight: 600;
 }
 .popup-log {
-    width: 22%;
+    width: 480px;
     margin: 0 auto;
     padding: 30px;
 
@@ -91,4 +94,36 @@ h2 {
     font-size: 12px;
 
     margin-top: 40px;
+}
+
+/* <!-- mobileeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee --> */
+
+@media (max-width: 767px) {
+
+
+.popup-log {
+    width: 80%;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+.popup-log > .opt {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.popup-log > .opt > .keep > label {
+    color: #767676;
+    width: 100%;
+}
+.popup-log > .opt > .find {
+    width: 100%;
+
+    text-align: right;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
 }

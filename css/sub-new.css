@@ -1,6 +1,6 @@
 @import url(./common.css);
 
-.menu > a:nth-of-type(1):checked {}
+.header-b > .menu > nav > a:nth-of-type(1)::after {width: 100%;}
 
 main {margin: 80px 0 500px 0;}
 

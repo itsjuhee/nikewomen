@@ -13,13 +13,11 @@ main {margin: 5% 2% 30% 2%;}
 .detail-pro-img > p {width: 49%; margin-bottom: 2%;}
 .detail-pro-img > p > img {width: 100%;}
 
-.contents > .detail {width: 40%;}
-.contents > .detail > .txt {}
-.contents > .detail > .txt {}
-
 .contents > .detail {
+    width: 40%;
     margin-left: 3%;
 }
+
 .contents > .detail > .txt {
     width: 100%;
     margin-top: 5%;
@@ -45,12 +43,12 @@ main {margin: 5% 2% 30% 2%;}
     width: 100%;
 }
 
-.contents > .detail > .option > .size {width: 80%;}
+.contents > .detail > .option > .size {width: 100%;}
 .contents > .detail > .option > .size > p {font-size: 16px;}
 .contents > .detail > .option > .size > ul {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: flex-start;
 }
 .contents > .detail > .option > .size > ul > li {margin: 4px 0;}
 .contents > .detail > .option > .size > ul > li > input {display: none;}
@@ -58,6 +56,7 @@ main {margin: 5% 2% 30% 2%;}
 .contents > .detail > .option > .size > ul > li > label {
     display: block;
     width: 70px; height: 34px;
+    margin-right: 8px;
     padding: 7px 0;
     text-align: center;
     
@@ -86,7 +85,7 @@ main {margin: 5% 2% 30% 2%;}
 
 .contents > .detail > .btn {
     width: 100%;
-    height: 7%;
+
     margin: 10% 0;
 
     display: flex;
@@ -99,9 +98,9 @@ main {margin: 5% 2% 30% 2%;}
     border: 3px solid #000000;
 }
 .contents > .detail > .btn > span:nth-of-type(1) {
-    padding: 16px 40px;
-    width: 242px; height: 59px;
+    padding: 4% 11%;
     text-align: center;
+    vertical-align: middle;
     border: none;
     background-color: #000000;
     color: #FFFFFF;
@@ -109,22 +108,23 @@ main {margin: 5% 2% 30% 2%;}
 .contents > .detail > .btn > span:nth-of-type(2) {
     font-size: 0;
     width: 59px; height: 59px;
-    padding: 13px;
-    margin-left: 8px;
+
+    margin-left: 2%;
 
     background: url(../resources/00.header/cart.png) no-repeat center;
 }
 .contents > .detail > .btn > span:nth-of-type(3) {
     font-size: 0;
     width: 59px; height: 59px;
-    padding: 13px;
-    margin-left: 8px;
+
+    margin-left: 2%;
 
     background: url(../resources/00.header/wishlist.png) no-repeat center;
 }
 .contents > .detail > .btn > span:nth-of-type(4) {
-    padding: 15px 40px;
-    width: 377px; height: 59px;
+    padding: 4% 8%;
+
+    margin-top: 2%;
     text-align: center;
 }
 .contents > .detail > .more-detail {
@@ -132,6 +132,7 @@ main {margin: 5% 2% 30% 2%;}
 }
 .contents > .detail > .more-detail > p {
     font-size: 14px;
+    display: inline;
 }
 
 .detail-reco {
@@ -165,8 +166,7 @@ main {margin: 5% 2% 30% 2%;}
 .detail-reco > ul > li > .pro-txt {margin-top: 20px;}
 .detail-reco > ul > li > .pro-txt > p {margin: 1px 0;}
 .detail-reco > ul > li > .pro-txt > p:nth-of-type(1) {color: #505050;}
-.detail-reco > ul > li > .pro-txt > p:nth-of-type(2) {}
-.detail-reco > ul > li > .pro-txt > p:nth-of-type(3) {}
+
 .detail-reco > ul > li > .pro-txt > p > span {
     font-size: 18px;
     font-weight: 600;
@@ -176,25 +176,130 @@ main {margin: 5% 2% 30% 2%;}
 
 
 /* <!-- mobileeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee --> */
-
+@media (min-width: 768px) and (max-width: 1920px) {
+    .m-btn {display: none;}
+    .m-detail-pro-img {display: none;}
+}
 @media (max-width: 767px) {
     
 main {margin: 10% 0 40% 0;}
-.mobile footer .m-sns {display: none;}
+
+.contents > .detail > .btn {display: none;}
+.detail-pro-img {display: none;}
+
+
+.contents > .m-detail-pro-img {
+    width: 100%; 
+
+    display: flex;
+    justify-content: center;
+}
+.contents > .m-detail-pro-img > p {
+    width: 70%; 
+}
+.contents > .m-detail-pro-img > div {
+    width: 20%; margin: 0 0 0 2%;
+    display: flex;
+    flex-direction: column;
+
+    height: 67vw;
+    overflow-y: auto;
+}
+.contents > .m-detail-pro-img > div > img {
+    margin-bottom: 10%;
+    flex-shrink: 0;
+}
+.contents > .m-detail-pro-img > div::-webkit-scrollbar {
+    display: none;
+}
+.contents > .m-detail-pro-img img {width: 100%;}
 
 
 
 
 
 
+.contents > .detail {
+    width: 100%;
+    margin: 0 4%;
+}
+
+.contents > .detail > .txt {
+    width: 100%;
+    margin: 5% 0 10% 0;
+    position: relative;
+}
+.contents > .detail > .txt > p {}
+.contents > .detail > .txt > p:nth-of-type(1) {
+    color: #505050; font-size: 12px;
+}
+.contents > .detail > .txt > p:nth-of-type(2) {
+    font-size: 15px;
+    margin: 2px 0 16px 0;
+}
+.contents > .detail > .txt > p:nth-of-type(3) {
+    font-size: 18px;
+    position: absolute;
+    top: 20%; right: 4%;
+}
+.contents > .detail > .txt > p > span {
+    font-size: 20px;
+    font-weight: 600;
+}
+.contents > .detail > .option {margin-bottom: 10%;}
+.contents > .detail > .option > .size {width: 90%;}
+.contents > .detail > .option > .size > ul {
+    justify-content: flex-start;
+}
+
+.contents > .detail > .option > .size > p {
+    font-size: 12px;
+}
+
+.contents > .detail > .option > .size > ul > li > label {
+    width: 54px; height: 27px;
+    font-size: 12px;
+    padding: 5px 0;
+    margin-right: 8px;
+}
+
+.contents > .detail > .option > .color > p {
+    font-size: 12px;
+}
+.contents > .detail > .option > .color > div > label {
+    width: 54px; height: 27px;
+    font-size: 12px;
+    padding: 4px 0;
+}
+.contents > .detail > .option > .quantity > p {
+    font-size: 12px;
+}
 
 
 
+.contents > .detail > .m-btn {
+    width: 100%; 
+    padding: 0 10%;
+    background-color: #FFFFFF;
 
+    display: flex;
 
+    position: fixed; bottom: 0; left: 0;
+}
+.contents > .detail > .m-btn > span {
+    font-size: 14px;
+    border-radius: 10px;
+    border: 2px solid #000000;
 
+    margin: 2% auto;
+    padding: 4% 8%;
+}
+.contents > .detail > .m-btn > span:nth-of-type(2) {
+    background-color: #000000;
+    color: #FFFFFF;
+}
 
-
+.contents > .detail > .more-detail {width: 90%;}
 
 
 
