@@ -24,9 +24,8 @@ main {margin: 80px 0 500px 0;}
 
     display: flex;
     flex-wrap: wrap;
-
 }
-.popup > .img > p {}
+
 .popup > .img > p > img {
     width: 100%;
 }
@@ -67,8 +66,6 @@ main {margin: 80px 0 500px 0;}
     font-weight: 600;
 }
 
-.popup > .detail > .option {}
-
 .popup > .detail > .option > .size {width: 380px;}
 .popup > .detail > .option > .size > p {font-size: 16px;}
 .popup > .detail > .option > .size > ul {
@@ -106,7 +103,6 @@ main {margin: 80px 0 500px 0;}
     font-size: 16px; 
 }
 
-.popup > .detail > .option > .quantity {}
 .popup > .detail > .option > .quantity > p {font-size: 16px;}
 
 .close {
@@ -119,7 +115,6 @@ main {margin: 80px 0 500px 0;}
     background: url(../resources/00.logo/close.png) no-repeat;
 }
 
-.popup > .detail > .btn {}
 .popup > .detail > .btn > span {
     position: absolute; bottom: 5%;
     text-align: center;
@@ -143,8 +138,6 @@ main {margin: 80px 0 500px 0;}
 /* <!-- mobileeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee --> */
 
 @media (max-width: 767px) {
-
-.mobile h1 {display: none;}    
     
 main {margin: 10% 0 40% 0;}
 .mobile footer .m-sns {display: none;}

@@ -1,83 +1,10 @@
 @import url(./common.css);
 
 
-.header-w > .menu > nav > a:nth-of-type(4)::after {width: 100%;}
+
 
 body {background-color: #000000;}
 main {margin: 80px 0 500px 0;}
-
-.header-w {
-    padding: 20px 0;
-
-    position: relative;
-}
-.header-w > .icon {
-    width: 100%; margin: 0 auto;
-}
-
-.header-w > .icon > a {
-    position: absolute;
-    left: 2%; top: 20%;
-}
-.header-w > .icon > h1 {
-    text-align: center;
-}
-.header-w > .icon > h1 > a {
-    font-size: 40px;
-    font-weight: 700;
-    color: #FFFFFF;
-}
-.header-w > .icon > span {
-    position: absolute;
-    right: 2%; top: 24%;
-}
-.header-w > .icon > span > a {
-    font-size: 0;
-    width: 33px; height: 33px;
-    margin: 0 12px;
-
-    display: inline-block;
-    vertical-align: middle;
-}
-.header-w > .icon > span > a:nth-child(1) {
-    background: url(../resources/00.header/search-w.png) no-repeat;
-}
-.header-w > .icon > span > a:nth-child(2) {
-    background: url(../resources/00.header/login-w.png) no-repeat;
-}
-.header-w > .icon > span > a:nth-child(3) {
-    background: url(../resources/00.header/wishlist-w.png) no-repeat;
-}
-.header-w > .icon > span > a:nth-child(4) {
-    background: url(../resources/00.header/cart-w.png) no-repeat;
-}
-
-
-.header-w > .menu {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.header-w > .menu > nav {
-    display: flex;
-
-    margin-top: 8px;
-}
-.header-w > .menu > nav > a {
-    padding: 0 1vw;
-    font-size: 20px;
-    color: #FFFFFF;
-}
-.header-w > .menu > nav > a::after {
-    content: '';
-    display: block;
-
-    border-bottom: 2px solid #FFFFFF;
-    width: 0%;
-    transition: 0.5s ease-in-out;
-    /* margin: 0 auto; */
-}
-.header-w > .menu > nav > a:hover::after {width: 100%;}
 
 main {margin: 80px 0 500px 0;}
 main > .collection {width: 90%; margin: 0 auto;}
@@ -90,7 +17,7 @@ main > .collection > ul > li {
     width: 1380px; height: 870px;
     margin-bottom: 120px;
 }
-main > .collection > ul > li > p {}
+
 main > .collection > ul > li > p > img {width: 100%;}
 
 main > .collection > ul > li > div {
@@ -109,7 +36,7 @@ main > .collection > ul > li > div > .context {
 
     margin: 12px auto;
 }
-main > .collection > ul > li > div > .btn-detail {}
+
 main > .collection > ul > li > div > .btn-detail > a {
     background-color: #FFFFFF;
 
@@ -122,9 +49,6 @@ main > .collection > ul > li > div > .btn-detail > a {
 footer > .details > span {color: #FFFFFF;}
 footer > .details > .info > p {color: #FFFFFF;}
 footer > .details > .ins > p {color: #FFFFFF;}
-
-
-
 
 
 
@@ -188,6 +112,33 @@ footer > .details > .ins > p {color: #FFFFFF;}
 main {margin: 10% 0 40% 0;}
 
 .mobile h1 {display: none;}
+
+.mobile header span > a {
+    margin-top: 7px;
+    position: absolute;
+}
+.mobile header span > a:nth-of-type(1) {
+    font-size: 0;
+    width: 30px; height: 30px;
+    background: url(../resources/10.mobile/m-search-w.png) no-repeat center;
+    top: 0; left: 1%;
+}
+.mobile header span > a:nth-of-type(2) {
+    font-size: 0;
+    width: 30px; height: 30px;
+    background: url(../resources/10.mobile/m-menu-w.png) no-repeat center;
+    top: 0; right: 1%;
+}
+
+.m-sub-collect-header > p {
+    font-size: 20px;
+    font-weight: 300;
+    color: #ffffff;
+
+    text-align: center;
+
+    margin-bottom: 20%;
+}
 
 main > .collection > ul > li {
     width: 100%; height: 60%;
