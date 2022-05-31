@@ -51,11 +51,11 @@ footer > .details > .ins > p {color: #FFFFFF;}
 .collect-more.active {display: flex;}
 
 .collect-more {
-    width: 75%; 
+    width: 80%; 
     margin: 0 auto; 
 
     position: fixed;
-    left: 50%; bottom: 5%;
+    left: 50%; bottom: 10%;
     transform: translateX(-50%);
     z-index: 2;
 
@@ -200,8 +200,6 @@ main > .collection > ul > li > div > .btn-detail > a {
     transform: translateX(-50%);
 }
 .collect-more > ul {
-    height: 90%;
-    
     display: flex;
     flex-direction: column;
 }
