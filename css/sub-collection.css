@@ -1,8 +1,6 @@
 @import url(./common.css);
 
 
-
-
 body {background-color: #000000;}
 main {margin: 80px 0 500px 0;}
 
@@ -50,23 +48,30 @@ footer > .details > span {color: #FFFFFF;}
 footer > .details > .info > p {color: #FFFFFF;}
 footer > .details > .ins > p {color: #FFFFFF;}
 
-
+.collect-more.active {display: flex;}
 
 .collect-more {
     width: 75%; 
     margin: 0 auto; 
-    margin-bottom: 150px;
+    margin-bottom: 5%;
 
     position: fixed;
-    left: 12.5%; bottom: 0;
-    z-index: 999999999;
+    left: 50%; bottom: 0;
+    transform: translateX(-50%);
+    z-index: 2;
+
+    background-color: rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 0 9999px rgba(0, 0, 0, 0.5);
+
+    display: none;
 }
 .collect-more > ul {
     display: flex;
     justify-content: space-between;
 }
 .collect-more > ul > li {
-    width: 450px; height: 524px;
+    width: 32%;
+    margin: 0 1%;
     position: relative;
 }
 .collect-more > ul > li > .pro-img {
@@ -76,12 +81,13 @@ footer > .details > .ins > p {color: #FFFFFF;}
 .collect-more > ul > li > .pro-img > a > img {width: 100%;}
 .collect-more > ul > li > .pro-img > span {
     width: 100%; 
-    padding: 30px 160px;
+    padding: 6% 12%;
 
     display: block;
     position: absolute; left: 0; bottom: 0;
 
     font-size: 20px; color: #FFFFFF;
+    text-align: center;
     background-color: rgba(121, 121, 121, 0.5); 
     opacity: 0%;
 }

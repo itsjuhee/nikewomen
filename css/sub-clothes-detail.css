@@ -23,7 +23,7 @@ main {margin: 5% 2% 30% 2%;}
     margin-top: 5%;
     margin-bottom: 50%;
 }
-.contents > .detail > .txt > p {}
+
 .contents > .detail > .txt > p:nth-of-type(1) {
     color: #505050; font-size: 20px;
 }
@@ -158,7 +158,7 @@ main {margin: 5% 2% 30% 2%;}
     width: 100%;
     position: relative;
 }
-.detail-reco > ul > li > .pro-img > .btn-wish {}
+
 .detail-reco > ul > li > .pro-img > a > img {
     width: 100%;
 }
@@ -216,9 +216,6 @@ main {margin: 10% 0 40% 0;}
 
 
 
-
-
-
 .contents > .detail {
     width: 100%;
     margin: 0 4%;
@@ -229,7 +226,7 @@ main {margin: 10% 0 40% 0;}
     margin: 5% 0 10% 0;
     position: relative;
 }
-.contents > .detail > .txt > p {}
+
 .contents > .detail > .txt > p:nth-of-type(1) {
     color: #505050; font-size: 12px;
 }

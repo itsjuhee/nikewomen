@@ -26,7 +26,6 @@ h2 {
     box-shadow: 10px 10px 4px 0px rgba(0, 0, 0, 0.2);
 }
 
-.popup-log > .id {}
 .popup-log > .id > label {font-size: 0;}
 .popup-log > .id > input {
     width: 100%;
@@ -77,7 +76,7 @@ h2 {
     background-color: #000000;
     color: #FFFFFF;
 }
-.popup-log > .sns {}
+
 .popup-log > .sns > p {
     text-align: center;
     color: #767676;

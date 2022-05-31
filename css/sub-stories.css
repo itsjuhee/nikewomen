@@ -9,7 +9,6 @@ main > .sub-stories-header {
     margin: 0 auto;
 }
 
-main > .sub-stories-header > div {}
 main > .sub-stories-header > img {width: 100%;}
 main > .sub-stories-header > p {
     text-align: center;
@@ -20,7 +19,6 @@ main > .sub-stories-header > p {
 .stories {
     margin: 240px 0 360px 130px;
 }
-.stories > ul {}
 .stories > ul > li {margin-bottom: 240px;}
 .stories > ul > li > .sto-main {
     width: 90%;
