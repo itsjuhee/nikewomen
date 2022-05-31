@@ -525,6 +525,8 @@ footer {display: none;}
     top: 0; right: 1%;
 }
 
+.mobile .m-menu.active {display: flex;}
+
 .mobile .m-menu {
     width: 100%; height: 100%;
     background-color: #000000;
@@ -534,6 +536,8 @@ footer {display: none;}
     flex-direction: column;
 
     position: fixed; top: 0; right: 0;
+
+    display: none;
 }
 .mobile .m-menu > a {
     font-size: 16px; font-weight: 400;

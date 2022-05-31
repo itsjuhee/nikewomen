@@ -164,8 +164,8 @@ main > .sub-stories-header {
     order: 2;
 }
 .stories > ul > li > .sto-img > p {
-    width: 50%;
-    margin-right: 5%;
+    width: 40%;
+    margin-right: 3%;
     flex-shrink: 0;
 }
 

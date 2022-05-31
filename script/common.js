@@ -7,6 +7,16 @@ const elMenuClose = document.querySelector('.close');
 elBtnMenu.addEventListener('click', function(){elMenu.classList.add('active');});
 elMenuClose.addEventListener('click', function(){elMenu.classList.remove('active');});
 
+// quick-view //
+
+const elQuickview = document.querySelector('.quickview');
+const elPopup = document.querySelector('.popup');
+const elQuickClose = document.querySelector('.quick-close');
+
+
+elQuickview.addEventListener('click', function(){elPopup.classList.add('active');});
+elQuickClose.addEventListener('click', function(){elPopup.classList.remove('active');});
+
 // collection popup //
 
 const elBtndetail = document.querySelector('.btn-detail');

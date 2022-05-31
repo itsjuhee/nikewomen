@@ -29,7 +29,7 @@ h2 {
 .popup-log > .id > label {font-size: 0;}
 .popup-log > .id > input {
     width: 100%;
-    padding: 20px 0;
+    padding: 5% 0;
     border: none; border-bottom: 1px solid #dbdbdb;
 }
 
@@ -40,7 +40,7 @@ h2 {
 .popup-log > .password > label {font-size: 0;}
 .popup-log > .password > input {
     width: 100%;
-    padding: 20px 0;
+    padding: 5% 0;
     border: none; border-bottom: 1px solid #dbdbdb;
 }
 .popup-log > .password > a {
@@ -99,30 +99,34 @@ h2 {
 
 @media (max-width: 767px) {
 
+h1 {display: none;}
 
 .popup-log {
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
     padding: 30px;
 }
 
-.popup-log > .opt {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
 .popup-log > .opt > .keep > label {
     color: #767676;
     width: 100%;
+    font-size: 14px;
 }
 .popup-log > .opt > .find {
-    width: 100%;
-
     text-align: right;
 
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+}
+.popup-log > .opt > .find > a {
+    font-size: 14px;
+}
+.popup-log > .sns > p {
+    font-size: 12px;
+}
+.popup-log > .nomem {
+    margin-top: 5%;
 }
 
 }

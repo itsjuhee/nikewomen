@@ -53,10 +53,9 @@ footer > .details > .ins > p {color: #FFFFFF;}
 .collect-more {
     width: 75%; 
     margin: 0 auto; 
-    margin-bottom: 5%;
 
     position: fixed;
-    left: 50%; bottom: 0;
+    left: 50%; bottom: 5%;
     transform: translateX(-50%);
     z-index: 2;
 
@@ -192,6 +191,59 @@ main > .collection > ul > li > div > .btn-detail > a {
 
     display: inline-block;
 }
+
+.collect-more {
+    width: 92%;
+
+    position: fixed;
+    left: 50%; bottom: 5%;
+    transform: translateX(-50%);
+}
+.collect-more > ul {
+    height: 90%;
+    
+    display: flex;
+    flex-direction: column;
+}
+.collect-more > ul > li {
+    width: 90%;
+    padding: 2% 0;
+    margin: 0 auto;
+    display: flex;
+
+}
+.collect-more > ul > li > .pro-img {
+    width: 50%;
+}
+.collect-more > ul > li > .pro-img > span {display: none;}
+
+.collect-more > ul > li > .pro-txt {
+    width: 50%;
+    margin: 0 3%;
+}
+.collect-more > ul > li > .pro-txt > p {
+    margin: 1px 0;
+    font-size: 14px;
+    color: #FFFFFF;
+}
+.collect-more > ul > li > .pro-txt > p:nth-of-type(1) {color: #dbdbdb;}
+.collect-more > ul > li > .pro-txt > p > span {
+    font-size: 16px;
+    font-weight: 600;
+    margin-right: 2px;
+    color: #FFFFFF;
+}
+
+.btn-wish {
+    background: url(../resources/10.mobile/m-wishlist.png) no-repeat center;
+    margin: 0;
+}
+
+
+
+
+
+
 
 
 .mobile footer {
