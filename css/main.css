@@ -36,14 +36,15 @@
     margin-top: 240px;
 
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 .main-01 > ul > li {
-    width: 480px; height: 560px;
+    width: 32%;
+    margin: 0 1%;
     position: relative;
 }
 .main-01 > ul > li > .pro-img > .btn-wish {
-    background: url(../resources/00.header/wishlist.png) no-repeat;
+    background: url(../resources/00.header/wishlist.png) no-repeat center;
 }
 .main-01 > ul > li > .pro-img > a > img {
     width: 100%;
@@ -55,12 +56,13 @@
 }
 .main-01 > ul > li > .pro-img > span {
     width: 100%; 
-    padding: 30px 180px;
+    padding: 6% 12%;
 
     display: block;
     position: absolute; left: 0; bottom: 0;
 
     font-size: 20px; color: #FFFFFF;
+    text-align: center;
     background-color: rgba(121, 121, 121, 0.5); 
     opacity: 0%;
 }
@@ -111,15 +113,15 @@
     margin: 0 auto;
     padding: 90px 0;
 }
-.main-02 > h2 {}
 .main-02 > ul {
     margin-top: 32px;
 
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 .main-02 > ul > li {
-    width: 400px; height: 457px;
+    width: 32%;
+    margin: 0 1%;
     position: relative;
 }
 
@@ -133,12 +135,13 @@
 }
 .main-02 > ul > li > .pro-img > span {
     width: 100%; 
-    padding: 30px 150px;
+    padding: 6% 12%;
 
     display: block;
     position: absolute; left: 0; bottom: 0;
 
     font-size: 16px; color: #FFFFFF;
+    text-align: center;
     background-color: rgba(121, 121, 121, 0.5); 
     opacity: 0%;
 }
