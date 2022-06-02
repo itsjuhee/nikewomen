@@ -295,8 +295,11 @@ footer > .details > .sns > a:nth-child(4) {
     width: 12%; margin-top: 40px;
 }
 .filter-title {padding: 0 0 20px 8px;}
-.filter-title > a:nth-of-type(1) {margin-right: 10px;}
-.filter .arrow {width: 25px; height: 25px;}
+
+.filter-title > a:nth-of-type(2) {
+    border-bottom: 1px solid #000000;
+    margin: 0 5%;
+}
 
 .cate-01 {padding: 20px 0 20px 8px; border-top: 1px solid #dbdbdb;}
 .cate-02 {padding: 20px 0 20px 8px; border-top: 1px solid #dbdbdb;}
@@ -629,7 +632,6 @@ main > .sub-header > p {
     font-size: 20px;
 
     margin: 10% 0;
-
 }
 
 .contents {
@@ -646,13 +648,9 @@ main > .sub-header > p {
     margin: 2% 0; padding: 0;
     text-align: right;
 }
-.filter-title > a {
-    font-size: 14px;
-}
-.filter-title > a:nth-of-type(1) {margin-right: 4px;}
-.filter-title > a:nth-of-type(2) {
-    border-bottom: 1px solid #000000;
-}
+.filter-title > a {font-size: 2.2vw;}
+.filter-title > a:nth-of-type(1) {margin: 1%;}
+.filter-title > a:nth-of-type(2) {margin: 0;}
 .product {
     width: 100%;
     margin: 0;
@@ -673,4 +671,12 @@ main > .sub-header > p {
     background: url(../resources/10.mobile/m-wishlist.png) no-repeat center;
     margin: 0;
 }
+}
+
+
+
+/* ipaddddddddddddddddddddddddddddddddddddddddddddddddddd */
+
+@media (min-width: 768px) and (max-width: 1280px) {
+    
 }

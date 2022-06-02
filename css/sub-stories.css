@@ -8,21 +8,16 @@ main > .sub-stories-header {
     width: 92%; height: 580px; 
     margin: 0 auto;
 }
-
 main > .sub-stories-header > img {width: 100%;}
 main > .sub-stories-header > p {
     text-align: center;
     margin-top: 32px;
-    font-size: 24px;
+    font-size: 1.2vw;
 }
-
-.stories {
-    margin: 240px 0 360px 130px;
-}
+.stories {margin: 240px 0 360px 130px;}
 .stories > ul > li {margin-bottom: 240px;}
 .stories > ul > li > .sto-main {
     width: 90%;
-
     display: flex;
 }
 .stories > ul > li > .sto-main > .sto-main-img {
@@ -36,36 +31,32 @@ main > .sub-stories-header > p {
     margin-left: 40px;
 }
 .stories > ul > li > .sto-main > div > h2 {
+    font-size: 2vw;
     margin: 16px 0;
 }
 .stories > ul > li > .sto-main > div > span {
-    font-size: 24px;
+    font-size: 1.2vw;
     color: #595959;
 }
 .stories > ul > li > .sto-main > div > p {
     margin-top: 24px;
-    font-size: 16px;
+    font-size: 0.9vw;
     color: #595959;
 }
-.stories > ul > li > .sto-img::-webkit-scrollbar {
-    display: none;
-}
+.stories > ul > li > .sto-img::-webkit-scrollbar {display: none;}
 .stories > ul > li > .sto-img {
     margin-top: 40px;
     display: flex;
 
     overflow-x: auto;
-    width: 1800px;
+    width: 100%;
 }
 .stories > ul > li > .sto-img > p {
     width: 28%;
     margin-right: 40px;
     flex-shrink: 0;
 }
-.stories > ul > li > .sto-img > p > img {
-    width: 100%;
-}
-
+.stories > ul > li > .sto-img > p > img {width: 100%;}
 .more-sto {
     margin: 0 auto;
     width: 70%;
@@ -92,7 +83,7 @@ main > .sub-stories-header > p {
     width: 100%;
 }
 .more-sto > ul > li > span {
-    font-size: 24px;
+    font-size: 1.3vw;
     padding: 12px 0;
     display: block;
 }
@@ -100,8 +91,6 @@ main > .sub-stories-header > p {
     color: #797979;
     overflow: hidden;
 }
-
-
 
 
 /* <!-- mobileeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee --> */
@@ -182,8 +171,6 @@ main > .sub-stories-header {
     font-size: 14px;
     color: #595959;
 }
-
-
 .more-sto {
     width: 90%;
 }
@@ -200,10 +187,7 @@ main > .sub-stories-header {
     clear: both;
     display: block;
 }
-.more-sto > ul > li {
-    
-    float: left;
-}
+.more-sto > ul > li {float: left;}
 .more-sto > ul > li:nth-of-type(1) {width: 66%;}
 .more-sto > ul > li:nth-of-type(2) {
     width: 32.5%;
@@ -213,20 +197,7 @@ main > .sub-stories-header {
     width: 32.5%;
     margin-left: 1%; margin-top: 1%;
 }
-
-
-.more-sto > ul > li > p > img {
-    width: 100%;
-}
-.more-sto > ul > li > span {
-    display: none;
-}
-.more-sto > ul > li > p:nth-of-type(2) {
-    display: none;
-}
-
-
-
-
-
+.more-sto > ul > li > p > img {width: 100%;}
+.more-sto > ul > li > span {display: none;}
+.more-sto > ul > li > p:nth-of-type(2) {display: none;}
 }
