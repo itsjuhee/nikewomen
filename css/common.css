@@ -487,7 +487,6 @@ footer > .details > .sns > a:nth-child(4) {
 .header-w > .menu {display: none;}
 
 .sub-header {display: none;}
-.filter-title .arrow {display: none;}
 .cate {display: none;}
 .product > ul > li > .pro-img > span {display: none;}
 footer {display: none;}
@@ -677,6 +676,48 @@ main > .sub-header > p {
 
 /* ipaddddddddddddddddddddddddddddddddddddddddddddddddddd */
 
-@media (min-width: 768px) and (max-width: 1280px) {
-    
+@media (min-width: 768px) and (max-width: 1023px) {
+    .sub-header {display: none;}
+    .cate {display: none;}
+
+    main > .sub-header {height: auto;}
+    main > .sub-header > p {
+        color: #000000;
+        top: 0%;
+        position: static;
+        font-size: 20px;
+
+        margin: 10% 0;
+    }
+
+    .contents {
+        width: 96%;
+
+        display: flex;
+        flex-direction: column;
+    }
+    .filter {
+        width: 100%;
+        margin: 0;
+    }
+    .filter-title {
+        margin: 2% 0; padding: 0;
+        text-align: right;
+    }
+    .filter-title > a {font-size: 2.2vw;}
+    .filter-title > a:nth-of-type(1) {margin: 1%;}
+    .filter-title > a:nth-of-type(2) {margin: 0;}
+    .product {
+        width: 100%;
+        margin: 0;
+        margin-top: 5%;
+    }
+    .product > ul {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .product > ul > li {width: 48%; height: auto;}
+    .product .pro-txt p {font-size: 2.2vw;}
+    .product > ul > li > .pro-txt > p > span {font-size: 2.2vw;}
 }

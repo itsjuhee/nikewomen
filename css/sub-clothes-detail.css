@@ -43,7 +43,7 @@ main {margin: 5% 2% 30% 2%;}
     width: 100%;
 }
 
-.contents > .detail > .option > .size {width: 100%;}
+.contents > .detail > .option > .size {width: 90%;}
 .contents > .detail > .option > .size > p {font-size: 16px;}
 .contents > .detail > .option > .size > ul {
     display: flex;
@@ -55,7 +55,7 @@ main {margin: 5% 2% 30% 2%;}
 .contents > .detail > .option > .size > ul > li > input:checked + label {border: 1px solid #000000;}
 .contents > .detail > .option > .size > ul > li > label {
     display: block;
-    width: 70px; height: 34px;
+    width: 70px;
     margin-right: 8px;
     padding: 7px 0;
     text-align: center;
@@ -72,7 +72,7 @@ main {margin: 5% 2% 30% 2%;}
 .contents > .detail > .option > .color > div > input:checked + label {border: 1px solid #000000;}
 .contents > .detail > .option > .color > div > label {
     display: block;
-    width: 70px; height: 34px;
+    width: 70px;
     padding: 4px 0;
     text-align: center;
     
@@ -148,10 +148,11 @@ main {margin: 5% 2% 30% 2%;}
 }
 .detail-reco > ul {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
 }
 .detail-reco > ul > li {
     width: 400px; height: 457px;
+    margin: 0 2%;
     position: relative;
 }
 .detail-reco > ul > li > .pro-img {
@@ -174,19 +175,19 @@ main {margin: 5% 2% 30% 2%;}
 }
 
 
+.m-btn {display: none;}
+.m-detail-pro-img {display: none;}
 
 /* <!-- mobileeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee --> */
-@media (min-width: 768px) and (max-width: 1920px) {
-    .m-btn {display: none;}
-    .m-detail-pro-img {display: none;}
-}
+
 @media (max-width: 767px) {
-    
-main {margin: 10% 0 40% 0;}
+.m-btn {display: block;}
+.m-detail-pro-img {display: block;}
+
+main {margin: 20% 0 40% 0;}
 
 .contents > .detail > .btn {display: none;}
 .detail-pro-img {display: none;}
-
 
 .contents > .m-detail-pro-img {
     width: 100%; 
@@ -209,16 +210,10 @@ main {margin: 10% 0 40% 0;}
     margin-bottom: 10%;
     flex-shrink: 0;
 }
-.contents > .m-detail-pro-img > div::-webkit-scrollbar {
-    display: none;
-}
+.contents > .m-detail-pro-img > div::-webkit-scrollbar {display: none;}
 .contents > .m-detail-pro-img img {width: 100%;}
-
-
-
 .contents > .detail {
-    width: 100%;
-    margin: 0 4%;
+    width: 96%; margin: 0 auto;
 }
 
 .contents > .detail > .txt {
@@ -228,77 +223,87 @@ main {margin: 10% 0 40% 0;}
 }
 
 .contents > .detail > .txt > p:nth-of-type(1) {
-    color: #505050; font-size: 12px;
+    color: #505050; font-size: 3.2vw;
 }
 .contents > .detail > .txt > p:nth-of-type(2) {
-    font-size: 15px;
+    font-size: 4vw;
     margin: 2px 0 16px 0;
 }
 .contents > .detail > .txt > p:nth-of-type(3) {
-    font-size: 18px;
+    font-size: 4.6vw;
     position: absolute;
     top: 20%; right: 4%;
 }
 .contents > .detail > .txt > p > span {
-    font-size: 20px;
+    font-size: 5vw;
     font-weight: 600;
 }
-.contents > .detail > .option {margin-bottom: 10%;}
+.contents > .detail > .option {margin: 10% 0;}
 .contents > .detail > .option > .size {width: 90%;}
-.contents > .detail > .option > .size > ul {
-    justify-content: flex-start;
-}
-
 .contents > .detail > .option > .size > p {
-    font-size: 12px;
+    font-size: 3.3vw;
+    margin: 2% 0;
 }
-
 .contents > .detail > .option > .size > ul > li > label {
-    width: 54px; height: 27px;
-    font-size: 12px;
-    padding: 5px 0;
-    margin-right: 8px;
+    width: 14vw;
+    font-size: 3.2vw; 
+    text-align: center;
+    padding: 10% 0;
 }
 
 .contents > .detail > .option > .color > p {
-    font-size: 12px;
+    font-size: 3.3vw;
+    margin: 2% 0;
 }
 .contents > .detail > .option > .color > div > label {
-    width: 54px; height: 27px;
-    font-size: 12px;
-    padding: 4px 0;
+    width: 14vw;
+    font-size: 3.2vw; 
+    text-align: center;
+    padding: 1.2% 0;
 }
 .contents > .detail > .option > .quantity > p {
-    font-size: 12px;
+    font-size: 3.3vw;
+    margin: 2% 0;
 }
-
-
 
 .contents > .detail > .m-btn {
     width: 100%; 
     padding: 0 10%;
-    background-color: #FFFFFF;
 
     display: flex;
+    justify-content: center;
 
     position: fixed; bottom: 0; left: 0;
 }
 .contents > .detail > .m-btn > span {
-    font-size: 14px;
+    font-size: 2.4vw; text-align: center;
     border-radius: 10px;
     border: 2px solid #000000;
-
-    margin: 2% auto;
-    padding: 4% 8%;
+    background-color: #FFFFFF;
+    
+    width: 30vw;
+    padding: 4% 6%;
+    margin: 0 2%;
 }
 .contents > .detail > .m-btn > span:nth-of-type(2) {
     background-color: #000000;
     color: #FFFFFF;
 }
-
-.contents > .detail > .more-detail {width: 90%;}
-
-
-
-
+.contents > .detail > .more-detail {
+    width: 100%;
+    font-size: 3vw;
+}
 }    
+
+
+
+/* ipaddddddddddddddddddddddddddddddddddddddddddddddddddd */
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .contents > .detail {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .detail-reco {width: 90%; margin-bottom: 0;}
+}
