@@ -24,7 +24,7 @@ main {margin: 80px 0 500px 0;}
     justify-content: space-between;
 }
 .wishlist > ul > li {
-    width: 480px;
+    width: 30%;
 
     position: relative;
 }
@@ -56,33 +56,9 @@ main {margin: 80px 0 500px 0;}
     margin-right: 2px;
 }
 
-.wishlist > ul > li > .btn {
-
-    margin: 20% 0;
-    display: flex;
-    justify-content: center;
-}
-.wishlist > ul > li > .btn > span {
-    text-align: center;
-
-    padding: 15px 40px;
-    margin: 0 12px;
-
-    font-size: 16px;
-    border-radius: 10px;
-    border: 3px solid #000000;
-}
-
-.wishlist > ul > li > .btn > span:nth-of-type(2) {
-    background-color: #000000;
-    color: #FFFFFF;
-}
-
 
 /* <!-- mobileeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee --> */
-@media (min-width: 768px) and (max-width: 1920px) {
-
-}
+@media (min-width: 768px) and (max-width: 1920px) {}
 
 @media (max-width: 767px) {
     
@@ -93,22 +69,13 @@ main {margin: 10% 0;}
 .wishlist {width: 90%;}
 
 .wishlist > ul > li {
-    margin: 0 auto 30%;
+    width: 32%;
+    margin-bottom: 4%;
 }
-.wishlist > ul > li > .btn {
-    margin: 10% 0;
-
-    display: flex;
-    justify-content: center;
+.wishlist > ul > li > .pro-img > .btn-wish {
+    background: url(../resources/10.mobile/m-wishlist-f.png) no-repeat center;
+    margin: 0;
 }
-.wishlist > ul > li > .btn > span {
-    text-align: center;
-
-    padding: 4% 8%;
-    margin: 0 12px;
-
-    font-size: 14px;
-}
-
-
+.wishlist > ul > li > .pro-txt > p {font-size: 1.8vw;}
+.wishlist > ul > li > .pro-txt > p > span {font-size: 2vw;}
 }
