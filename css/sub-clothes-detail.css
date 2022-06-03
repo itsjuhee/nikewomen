@@ -44,7 +44,7 @@ main {margin: 5% 2% 30% 2%;}
 }
 
 .contents > .detail > .option > .size {width: 90%;}
-.contents > .detail > .option > .size > p {font-size: 16px;}
+.contents > .detail > .option > .size > p {font-size: 16px; margin: 1% 0;}
 .contents > .detail > .option > .size > ul {
     display: flex;
     flex-wrap: wrap;
@@ -66,7 +66,7 @@ main {margin: 5% 2% 30% 2%;}
 }
 
 
-.contents > .detail > .option > .color > p {font-size: 16px;}
+.contents > .detail > .option > .color > p {font-size: 16px; margin: 1% 0;}
 
 .contents > .detail > .option > .color > div > input {display: none;}
 .contents > .detail > .option > .color > div > input:checked + label {border: 1px solid #000000;}
@@ -81,7 +81,7 @@ main {margin: 5% 2% 30% 2%;}
     font-size: 16px; 
 }
 
-.contents > .detail > .option > .quantity > p {font-size: 16px;}
+.contents > .detail > .option > .quantity > p {font-size: 16px; margin: 1% 0;}
 
 .contents > .detail > .btn {
     width: 100%;
