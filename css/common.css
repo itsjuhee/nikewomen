@@ -464,6 +464,44 @@ footer > .details > .sns > a:nth-child(4) {
     margin-right: 2px;
 }
 
+
+/* product detail - quantity */
+
+.detail > .option > .quantity > p {font-size: 16px; margin: 1% 0;}
+
+.detail > .option > .quantity > div {
+    display: flex;
+    align-items: center;
+}
+.detail > .option > .quantity > div > .qua-res {
+    font-size: 18px;
+    margin: 0 2%;
+}
+.detail > .option > .quantity > div > .plus {
+    background: url(../resources/00.logo/plus.png) center no-repeat;
+    font-size: 0;
+    width: 25px; height: 25px;
+    margin: 0 1%;
+}
+.detail > .option > .quantity > div > .minus {
+    background: url(../resources/00.logo/minus.png) center no-repeat;
+    font-size: 0;
+    width: 25px; height: 25px;
+    margin: 0 1%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 .mobile {display: none;}
 .m-sub-stories-header {display: none;}
 .m-sub-collect-header {display: none;}
