@@ -1,27 +1,29 @@
 @import url(./common.css);
 
-.main-img {margin: 0 auto;}
-.main-img > img {width: 100%;}
 
+body {background-color: #f8f8f8;}
+
+.main-img {margin: 0 auto; overflow: hidden;}
+.main-img > img {
+    width: 100%;
+
+    animation: main-img 7s forwards;
+}
+@keyframes main-img {
+    100% {transform: scale(1.1);}
+}
 .main-01 {
     width: 90%;
     margin: 0 auto;
     padding: 90px 0;
 }
 
-.main-01-head > h2 {}
-
 .main-01-head > p > img {
     width: 100%;
     margin: 32px 0;
 }
-.main-01-head > div {}
-.main-01-head > div > p {
-    text-align: center;
-}
-.main-01-head > div > p:nth-of-type(1) {
-    font-size: 36px;
-}
+.main-01-head > div > p {text-align: center;}
+.main-01-head > div > p:nth-of-type(1) {font-size: 36px;}
 .main-01-head > div > p:nth-of-type(2) {
     margin-top: 12px;
     font-size: 16px;
@@ -31,18 +33,17 @@
     margin-top: 240px;
 
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 .main-01 > ul > li {
-    width: 480px; height: 560px;
+    width: 32%;
+    margin: 0 1%;
     position: relative;
 }
 .main-01 > ul > li > .pro-img > .btn-wish {
-    background: url(../resources/00.header/wishlist.png) no-repeat;
+    background: url(../resources/00.header/wishlist.png) no-repeat center;
 }
-.main-01 > ul > li > .pro-img > a > img {
-    width: 100%;
-}
+.main-01 > ul > li > .pro-img > a > img {width: 100%;}
 
 .main-01 > ul > li > .pro-img {
     width: 100%;
@@ -50,12 +51,13 @@
 }
 .main-01 > ul > li > .pro-img > span {
     width: 100%; 
-    padding: 30px 180px;
+    padding: 6% 12%;
 
     display: block;
     position: absolute; left: 0; bottom: 0;
 
     font-size: 20px; color: #FFFFFF;
+    text-align: center;
     background-color: rgba(121, 121, 121, 0.5); 
     opacity: 0%;
 }
@@ -64,15 +66,9 @@
     opacity: 100%;
 }
 
-.main-01 > ul > li > .pro-txt {
-    margin-top: 20px;
-}
-.main-01 > ul > li > .pro-txt > p {
-    margin: 1px 0;
-}
-.main-01 > ul > li > .pro-txt > p:nth-of-type(1) {
-    color: #505050;
-}
+.main-01 > ul > li > .pro-txt {margin-top: 20px;}
+.main-01 > ul > li > .pro-txt > p {margin: 1px 0;}
+.main-01 > ul > li > .pro-txt > p:nth-of-type(1) {color: #505050;}
 .main-01 > ul > li > .pro-txt > p > span {
     font-size: 18px;
     font-weight: 600;
@@ -92,28 +88,27 @@
     left: 5%; top: 40%;
 }
 .banner > div > b {
-    font-size: 36px;
+    font-size: 2vw;
 }
 .banner > div > p {
-    line-height: 20px;
-    padding: 8px 0;
+    font-size: 1vw;
+    margin: 2% 0;
 }
-
 
 .main-02 {
     width: 90%;
     margin: 0 auto;
     padding: 90px 0;
 }
-.main-02 > h2 {}
 .main-02 > ul {
     margin-top: 32px;
 
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 .main-02 > ul > li {
-    width: 400px; height: 457px;
+    width: 32%;
+    margin: 0 1%;
     position: relative;
 }
 
@@ -127,12 +122,13 @@
 }
 .main-02 > ul > li > .pro-img > span {
     width: 100%; 
-    padding: 30px 150px;
+    padding: 6% 12%;
 
     display: block;
     position: absolute; left: 0; bottom: 0;
 
     font-size: 16px; color: #FFFFFF;
+    text-align: center;
     background-color: rgba(121, 121, 121, 0.5); 
     opacity: 0%;
 }
@@ -175,7 +171,7 @@
     gap: 20px;
 }
 .main-03 > p {
-    
+    overflow: hidden;
 }
 .main-03 > p > img {
     object-fit: cover;
@@ -185,25 +181,49 @@
     grid-column: 1;
     grid-row: 1 / 3;
 }
+.main-03 > .img01:hover > img {
+    transform: scale(1.2);
+    transition: 1s;
+}
 .main-03 > .img02 {
     grid-column: 2;
     grid-row: 1 / 2;
+}
+.main-03 > .img02:hover > img {
+    transform: scale(1.2);
+    transition: 1s;
 }
 .main-03 > .img03 {
     grid-column: 3;
     grid-row: 1 / 3;
 }
+.main-03 > .img03:hover > img {
+    transform: scale(1.2);
+    transition: 1s;
+}
 .main-03 > .img04 {
     grid-column: 1;
     grid-row: 3 / 4;
+}
+.main-03 > .img04:hover > img {
+    transform: scale(1.2);
+    transition: 1s;
 }
 .main-03 > .img05 {
     grid-column: 2;
     grid-row: 2 / 4;
 }
+.main-03 > .img05:hover > img {
+    transform: scale(1.2);
+    transition: 1s;
+}
 .main-03 > .img06 {
     grid-column: 3;
     grid-row: 3 / 4;
+}
+.main-03 > .img06:hover > img {
+    transform: scale(1.2);
+    transition: 1s;
 }
 
 

@@ -1,80 +1,7 @@
 @import url(./common.css);
 
+
 body {background-color: #000000;}
-main {margin: 80px 0 500px 0;}
-
-.header-w {
-    padding: 20px 0;
-
-    position: relative;
-}
-.header-w > .icon {
-    width: 100%; margin: 0 auto;
-}
-
-.header-w > .icon > a {
-    position: absolute;
-    left: 2%; top: 20%;
-}
-.header-w > .icon > h1 {
-    text-align: center;
-}
-.header-w > .icon > h1 > a {
-    font-size: 40px;
-    font-weight: 700;
-    color: #FFFFFF;
-}
-.header-w > .icon > span {
-    position: absolute;
-    right: 2%; top: 24%;
-}
-.header-w > .icon > span > a {
-    font-size: 0;
-    width: 33px; height: 33px;
-    margin: 0 12px;
-
-    display: inline-block;
-    vertical-align: middle;
-}
-.header-w > .icon > span > a:nth-child(1) {
-    background: url(../resources/00.header/search-w.png) no-repeat;
-}
-.header-w > .icon > span > a:nth-child(2) {
-    background: url(../resources/00.header/login-w.png) no-repeat;
-}
-.header-w > .icon > span > a:nth-child(3) {
-    background: url(../resources/00.header/wishlist-w.png) no-repeat;
-}
-.header-w > .icon > span > a:nth-child(4) {
-    background: url(../resources/00.header/cart-w.png) no-repeat;
-}
-
-
-.header-w > .menu {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.header-w > .menu > nav {
-    display: flex;
-
-    margin-top: 8px;
-}
-.header-w > .menu > nav > a {
-    padding: 0 1vw;
-    font-size: 20px;
-    color: #FFFFFF;
-}
-.header-w > .menu > nav > a::after {
-    content: '';
-    display: block;
-
-    border-bottom: 2px solid #FFFFFF;
-    width: 0%;
-    transition: 0.5s ease-in-out;
-    /* margin: 0 auto; */
-}
-.header-w > .menu > nav > a:hover::after {width: 100%;}
 
 main {margin: 80px 0 500px 0;}
 main > .collection {width: 90%; margin: 0 auto;}
@@ -87,7 +14,7 @@ main > .collection > ul > li {
     width: 1380px; height: 870px;
     margin-bottom: 120px;
 }
-main > .collection > ul > li > p {}
+
 main > .collection > ul > li > p > img {width: 100%;}
 
 main > .collection > ul > li > div {
@@ -106,7 +33,7 @@ main > .collection > ul > li > div > .context {
 
     margin: 12px auto;
 }
-main > .collection > ul > li > div > .btn-detail {}
+
 main > .collection > ul > li > div > .btn-detail > a {
     background-color: #FFFFFF;
 
@@ -120,26 +47,29 @@ footer > .details > span {color: #FFFFFF;}
 footer > .details > .info > p {color: #FFFFFF;}
 footer > .details > .ins > p {color: #FFFFFF;}
 
-
-
-
-
+.collect-more.active {display: flex;}
 
 .collect-more {
-    width: 75%; 
+    width: 80%; 
     margin: 0 auto; 
-    margin-bottom: 150px;
 
     position: fixed;
-    left: 12.5%; bottom: 0;
-    z-index: 999999999;
+    left: 50%; bottom: 10%;
+    transform: translateX(-50%);
+    z-index: 2;
+
+    background-color: rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 0 9999px rgba(0, 0, 0, 0.5);
+
+    display: none;
 }
 .collect-more > ul {
     display: flex;
     justify-content: space-between;
 }
 .collect-more > ul > li {
-    width: 450px; height: 524px;
+    width: 32%;
+    margin: 0 1%;
     position: relative;
 }
 .collect-more > ul > li > .pro-img {
@@ -149,12 +79,13 @@ footer > .details > .ins > p {color: #FFFFFF;}
 .collect-more > ul > li > .pro-img > a > img {width: 100%;}
 .collect-more > ul > li > .pro-img > span {
     width: 100%; 
-    padding: 30px 160px;
+    padding: 6% 12%;
 
     display: block;
     position: absolute; left: 0; bottom: 0;
 
     font-size: 20px; color: #FFFFFF;
+    text-align: center;
     background-color: rgba(121, 121, 121, 0.5); 
     opacity: 0%;
 }
@@ -184,6 +115,34 @@ footer > .details > .ins > p {color: #FFFFFF;}
     
 main {margin: 10% 0 40% 0;}
 
+.mobile h1 {display: none;}
+
+.mobile header span > a {
+    margin-top: 7px;
+    position: absolute;
+}
+.mobile header span > a:nth-of-type(1) {
+    font-size: 0;
+    width: 30px; height: 30px;
+    background: url(../resources/10.mobile/m-search-w.png) no-repeat center;
+    top: 0; left: 1%;
+}
+.mobile header span > a:nth-of-type(2) {
+    font-size: 0;
+    width: 30px; height: 30px;
+    background: url(../resources/10.mobile/m-menu-w.png) no-repeat center;
+    top: 0; right: 1%;
+}
+
+.m-sub-collect-header > p {
+    font-size: 20px;
+    font-weight: 300;
+    color: #ffffff;
+
+    text-align: center;
+
+    margin-bottom: 20%;
+}
 
 main > .collection > ul > li {
     width: 100%; height: 60%;
@@ -231,6 +190,57 @@ main > .collection > ul > li > div > .btn-detail > a {
 
     display: inline-block;
 }
+
+.collect-more {
+    width: 92%;
+
+    position: fixed;
+    left: 50%; bottom: 5%;
+    transform: translateX(-50%);
+}
+.collect-more > ul {
+    display: flex;
+    flex-direction: column;
+}
+.collect-more > ul > li {
+    width: 90%;
+    padding: 2% 0;
+    margin: 0 auto;
+    display: flex;
+
+}
+.collect-more > ul > li > .pro-img {
+    width: 50%;
+}
+.collect-more > ul > li > .pro-img > span {display: none;}
+
+.collect-more > ul > li > .pro-txt {
+    width: 50%;
+    margin: 0 3%;
+}
+.collect-more > ul > li > .pro-txt > p {
+    margin: 1px 0;
+    font-size: 14px;
+    color: #FFFFFF;
+}
+.collect-more > ul > li > .pro-txt > p:nth-of-type(1) {color: #dbdbdb;}
+.collect-more > ul > li > .pro-txt > p > span {
+    font-size: 16px;
+    font-weight: 600;
+    margin-right: 2px;
+    color: #FFFFFF;
+}
+
+.btn-wish {
+    background: url(../resources/10.mobile/m-wishlist.png) no-repeat center;
+    margin: 0;
+}
+
+
+
+
+
+
 
 
 .mobile footer {

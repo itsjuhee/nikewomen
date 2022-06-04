@@ -9,6 +9,7 @@
     <link rel="icon" type="image/png" href="./resources/icon-16x16.png" sizes="16x16" />
 
     <link href="./css/sub-clothes-detail.css" rel="stylesheet">
+    <script defer src="./script/common.js"></script>
 </head>
 <body>
 
@@ -36,13 +37,13 @@
 <!-- mobileeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee -->
 <div class="mobile">
     <header>
-        <h1> <a href="#"> NIKE WOMEN </a> </h1>
+        <h1> <a href="./index.html"> NIKE WOMEN </a> </h1>
         <span>
             <a href="#"> search </a>
-            <a href="#"> menu </a>
+            <a class="m-btn-menu" href="#"> menu </a>
         </span>
         <div class="m-menu">
-            <a> close </a>
+            <a class="close"> close </a>
             <div class="sub">
                 <a href="./sub-new.html"> NEW </a>
                 <a href="./sub-shoes.html"> SHOES </a>
@@ -51,9 +52,9 @@
                 <a href="./sub-stories.html"> STORIES </a>
             </div>
             <div class="per">
-                <a> LOG IN </a>
-                <a> WISHLIST </a>
-                <a> CART </a>
+                <a href="./login.html"> LOG IN </a>
+                <a href="./wishlist.html"> WISHLIST </a>
+                <a href="./cart.html"> CART </a>
             </div>
         </div>
     </header>
@@ -64,11 +65,20 @@
 <main>
     <div class="contents">
         <div class="detail-pro-img">
-            <p><img src="./resources/03.clothes/03-3/clothes-detail-01.jpg" alt=""></p>
-            <p><img src="./resources/03.clothes/03-3/clothes-detail-02.jpg" alt=""></p>
-            <p><img src="./resources/03.clothes/03-3/clothes-detail-03.jpg" alt=""></p>
-            <p><img src="./resources/03.clothes/03-3/clothes-detail-04.jpg" alt=""></p>
-            <p><img src="./resources/03.clothes/03-3/clothes-detail-05.jpg" alt=""></p>
+            <p><img src="./resources/03.clothes/03-3/clothes-detail-01.jpg" alt="detail-01"></p>
+            <p><img src="./resources/03.clothes/03-3/clothes-detail-02.jpg" alt="detail-02"></p>
+            <p><img src="./resources/03.clothes/03-3/clothes-detail-03.jpg" alt="detail-03"></p>
+            <p><img src="./resources/03.clothes/03-3/clothes-detail-04.jpg" alt="detail-04"></p>
+            <p><img src="./resources/03.clothes/03-3/clothes-detail-05.jpg" alt="detail-05"></p>
+        </div>
+        <div class="m-detail-pro-img">
+            <p><img src="./resources/03.clothes/03-3/clothes-detail-01.jpg" alt="detail-01"></p>
+            <div>
+                <img src="./resources/03.clothes/03-3/clothes-detail-02.jpg" alt="detail-02">
+                <img src="./resources/03.clothes/03-3/clothes-detail-03.jpg" alt="detail-03">
+                <img src="./resources/03.clothes/03-3/clothes-detail-04.jpg" alt="detail-04">
+                <img src="./resources/03.clothes/03-3/clothes-detail-05.jpg" alt="detail-05">
+            </div>
         </div>
         <div class="detail">
             <div class="txt">
@@ -116,8 +126,8 @@
                 <div class="quantity">
                     <p> 수량 </p>
                     <div>
-                        <input type="number" value="1" min="1" max="10">
-                        <span> ┼ </span> <span> ─ </span>
+                        <div class="qua-res"> 0 </div>
+                        <a class="plus"> + </a> <a class="minus"> - </a>
                     </div>
                 </div>
             </div>
@@ -128,6 +138,12 @@
                 <span> wishlist </span>
                 <span> 지금 주문하고 매장에서 바로 픽업하기 </span>
             </div>
+
+            <div class="m-btn">
+                <span> 장바구니 담기 </span>
+                <span> 바로 구매하기 </span>
+            </div>
+
             <div class="more-detail">
                 <p> 모바일 기기는 꺼두고 야외에서 여유로운 시간을 즐겨 보세요. 
                     넉넉한 핏과 부드러운 면 소재가 하이킹할 때나 풀사이드에서 독서를 할 때 편안함을 선사합니다. 
@@ -144,7 +160,7 @@
             <li>
                 <div class="pro-img">
                     <a class="btn-wish" href="#"> wishlist </a>
-                    <a> <img src="./resources/01.new/01-3/shoes-detail-01.jpg" alt=""> </a>
+                    <a> <img src="./resources/01.new/01-3/shoes-detail-01.jpg" alt="re-01"> </a>
                     
                 </div>
                 
@@ -157,7 +173,7 @@
             <li>
                 <div class="pro-img">
                     <a class="btn-wish" href="#"> wishlist </a>
-                    <a> <img src="./resources/01.new/01-4/clothes-detail-01.jpg" alt=""> </a>
+                    <a> <img src="./resources/01.new/01-4/clothes-detail-01.jpg" alt="re-02"> </a>
                     
                 </div>
                 
@@ -170,7 +186,7 @@
             <li>
                 <div class="pro-img">
                     <a class="btn-wish" href="#"> wishlist </a>
-                    <a> <img src="./resources/01.new/01-5/clothes-detail-01.jpg" alt=""> </a>
+                    <a> <img src="./resources/01.new/01-5/clothes-detail-01.jpg" alt="re-03"> </a>
                     
                 </div>
                 
@@ -184,30 +200,6 @@
     </div>
 </footer>
 
-<!-- mobileeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee -->
-<div class="mobile">
-    <footer>
-        <div class="m-sns">
-            <a> twitter </a>
-            <a> instagram </a>
-            <a> facebook </a>
-            <a> youtube </a>
-        </div>
-        <div class="m-info">
-            <span> (유)나이키코리아 </span>
-            <div>
-                <p> 대표 : Kimberlee Lynn Chang Mendes </p>
-                <p> 서울 강남구 테헤란로 152 강남파이낸스센터 30층 </p>
-                <p> 등록번호 : 220-88-09068 </p>
-                <p> 통신판매업신고번호 : 2011-서울강남-03461 </p>
-                <p> 팩스 : 02-6744-5880 </p>
-                <p> 이메일 : service@nike.co.kr </p>
-                <p> 고객센터 전화문의 : 080-022-0182 </p>
-                <p> ⓒ 2022 Nike, Inc. All Rights Reserved </p>
-            </div>
-        </div>
-    </footer>
-</div>
 
 </body>
 </html>

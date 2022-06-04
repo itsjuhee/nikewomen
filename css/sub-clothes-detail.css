@@ -13,19 +13,17 @@ main {margin: 5% 2% 30% 2%;}
 .detail-pro-img > p {width: 49%; margin-bottom: 2%;}
 .detail-pro-img > p > img {width: 100%;}
 
-.contents > .detail {width: 40%;}
-.contents > .detail > .txt {}
-.contents > .detail > .txt {}
-
 .contents > .detail {
+    width: 50%;
     margin-left: 3%;
 }
+
 .contents > .detail > .txt {
     width: 100%;
     margin-top: 5%;
     margin-bottom: 50%;
 }
-.contents > .detail > .txt > p {}
+
 .contents > .detail > .txt > p:nth-of-type(1) {
     color: #505050; font-size: 20px;
 }
@@ -45,19 +43,20 @@ main {margin: 5% 2% 30% 2%;}
     width: 100%;
 }
 
-.contents > .detail > .option > .size {width: 80%;}
-.contents > .detail > .option > .size > p {font-size: 16px;}
+.contents > .detail > .option > .size {width: 90%;}
+.contents > .detail > .option > .size > p {font-size: 16px; margin: 1% 0;}
 .contents > .detail > .option > .size > ul {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: flex-start;
 }
 .contents > .detail > .option > .size > ul > li {margin: 4px 0;}
 .contents > .detail > .option > .size > ul > li > input {display: none;}
 .contents > .detail > .option > .size > ul > li > input:checked + label {border: 1px solid #000000;}
 .contents > .detail > .option > .size > ul > li > label {
     display: block;
-    width: 70px; height: 34px;
+    width: 70px;
+    margin-right: 8px;
     padding: 7px 0;
     text-align: center;
     
@@ -67,13 +66,13 @@ main {margin: 5% 2% 30% 2%;}
 }
 
 
-.contents > .detail > .option > .color > p {font-size: 16px;}
+.contents > .detail > .option > .color > p {font-size: 16px; margin: 1% 0;}
 
 .contents > .detail > .option > .color > div > input {display: none;}
 .contents > .detail > .option > .color > div > input:checked + label {border: 1px solid #000000;}
 .contents > .detail > .option > .color > div > label {
     display: block;
-    width: 70px; height: 34px;
+    width: 70px;
     padding: 4px 0;
     text-align: center;
     
@@ -82,56 +81,52 @@ main {margin: 5% 2% 30% 2%;}
     font-size: 16px; 
 }
 
-.contents > .detail > .option > .quantity > p {font-size: 16px;}
-
+.contents > .detail > .option > .quantity > p {font-size: 16px; margin: 1% 0;}
+.contents > .detail > .option > .quantity > div > input {
+    width: 40px;
+    border: none;
+    font-size: 20px;
+}
 .contents > .detail > .btn {
     width: 100%;
-    height: 7%;
     margin: 10% 0;
 
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-start;
 }
 .contents > .detail > .btn > span {
+    padding: 3%;
     font-size: 16px;
+    height: 60px;
+    text-align: center;
     border-radius: 6px;
-    border: 3px solid #000000;
+    border: 2px solid #000000;
 }
 .contents > .detail > .btn > span:nth-of-type(1) {
-    padding: 16px 40px;
-    width: 242px; height: 59px;
-    text-align: center;
-    border: none;
     background-color: #000000;
     color: #FFFFFF;
+    width: 260px;
 }
 .contents > .detail > .btn > span:nth-of-type(2) {
     font-size: 0;
-    width: 59px; height: 59px;
-    padding: 13px;
-    margin-left: 8px;
-
+    width: 60px; height: 60px;
+    margin-left: 2%;
     background: url(../resources/00.header/cart.png) no-repeat center;
 }
 .contents > .detail > .btn > span:nth-of-type(3) {
     font-size: 0;
-    width: 59px; height: 59px;
-    padding: 13px;
-    margin-left: 8px;
-
+    width: 60px; height: 60px;
+    margin-left: 2%;
     background: url(../resources/00.header/wishlist.png) no-repeat center;
 }
 .contents > .detail > .btn > span:nth-of-type(4) {
-    padding: 15px 40px;
-    width: 377px; height: 59px;
-    text-align: center;
+    margin-top: 2%;
+    width: 400px;
 }
-.contents > .detail > .more-detail {
-    width: 80%;
-}
+.contents > .detail > .more-detail {width: 80%;}
 .contents > .detail > .more-detail > p {
     font-size: 14px;
+    display: inline;
 }
 
 .detail-reco {
@@ -147,17 +142,18 @@ main {margin: 5% 2% 30% 2%;}
 }
 .detail-reco > ul {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
 }
 .detail-reco > ul > li {
     width: 400px; height: 457px;
+    margin: 0 2%;
     position: relative;
 }
 .detail-reco > ul > li > .pro-img {
     width: 100%;
     position: relative;
 }
-.detail-reco > ul > li > .pro-img > .btn-wish {}
+
 .detail-reco > ul > li > .pro-img > a > img {
     width: 100%;
 }
@@ -165,8 +161,7 @@ main {margin: 5% 2% 30% 2%;}
 .detail-reco > ul > li > .pro-txt {margin-top: 20px;}
 .detail-reco > ul > li > .pro-txt > p {margin: 1px 0;}
 .detail-reco > ul > li > .pro-txt > p:nth-of-type(1) {color: #505050;}
-.detail-reco > ul > li > .pro-txt > p:nth-of-type(2) {}
-.detail-reco > ul > li > .pro-txt > p:nth-of-type(3) {}
+
 .detail-reco > ul > li > .pro-txt > p > span {
     font-size: 18px;
     font-weight: 600;
@@ -174,29 +169,244 @@ main {margin: 5% 2% 30% 2%;}
 }
 
 
+.m-btn {display: none;}
+.m-detail-pro-img {display: none;}
 
 /* <!-- mobileeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee --> */
 
 @media (max-width: 767px) {
+.m-btn {display: block;}
+.m-detail-pro-img {display: block;}
+
+main {margin: 20% 0 40% 0;}
+
+.contents > .detail > .btn {display: none;}
+.detail-pro-img {display: none;}
+
+.contents > .m-detail-pro-img {
+    width: 100%; 
+
+    display: flex;
+    justify-content: center;
+}
+.contents > .m-detail-pro-img > p {
+    width: 70%; 
+}
+.contents > .m-detail-pro-img > div {
+    width: 20%; margin: 0 0 0 2%;
+    display: flex;
+    flex-direction: column;
+
+    height: 67vw;
+    overflow-y: auto;
+}
+.contents > .m-detail-pro-img > div > img {
+    margin-bottom: 10%;
+    flex-shrink: 0;
+}
+.contents > .m-detail-pro-img > div::-webkit-scrollbar {display: none;}
+.contents > .m-detail-pro-img img {width: 100%;}
+.contents > .detail {
+    width: 96%; margin: 0 auto;
+}
+
+.contents > .detail > .txt {
+    width: 100%;
+    margin: 5% 0 10% 0;
+    position: relative;
+}
+
+.contents > .detail > .txt > p:nth-of-type(1) {
+    color: #505050; font-size: 3.2vw;
+}
+.contents > .detail > .txt > p:nth-of-type(2) {
+    font-size: 4vw;
+    margin: 2px 0 16px 0;
+}
+.contents > .detail > .txt > p:nth-of-type(3) {
+    font-size: 4.6vw;
+    position: absolute;
+    top: 20%; right: 4%;
+}
+.contents > .detail > .txt > p > span {
+    font-size: 5vw;
+    font-weight: 600;
+}
+.contents > .detail > .option {margin: 10% 0;}
+.contents > .detail > .option > .size {width: 90%;}
+.contents > .detail > .option > .size > p {
+    font-size: 3.3vw;
+    margin: 2% 0;
+}
+.contents > .detail > .option > .size > ul > li > label {
+    width: 14vw;
+    font-size: 3.2vw; 
+    text-align: center;
+    padding: 10% 0;
+}
+
+.contents > .detail > .option > .color > p {
+    font-size: 3.3vw;
+    margin: 2% 0;
+}
+.contents > .detail > .option > .color > div > label {
+    width: 14vw;
+    font-size: 3.2vw; 
+    text-align: center;
+    padding: 1.2% 0;
+}
+.contents > .detail > .option > .quantity > p {
+    font-size: 3.3vw;
+    margin: 2% 0;
+}
+
+.contents > .detail > .m-btn {
+    width: 100%; 
+
+    display: flex;
+    justify-content: center;
+
+    position: fixed; bottom: 0; left: 0;
+
+    background-color: #FFFFFF;
+}
+.contents > .detail > .m-btn > span {
+    font-size: 2.4vw; text-align: center;
+    border-radius: 10px;
+    border: 2px solid #000000;
+    background-color: #FFFFFF;
     
-main {margin: 10% 0 40% 0;}
-.mobile footer .m-sns {display: none;}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    width: 34vw;
+    
+    margin: 1%;
+    padding: 3% 4%;
+}
+.contents > .detail > .m-btn > span:nth-of-type(2) {
+    background-color: #000000;
+    color: #FFFFFF;
+}
+.contents > .detail > .more-detail {width: 100%;}
+.contents > .detail > .more-detail > p {font-size: 3vw;}
 }    
+
+
+
+/* ipaddddddddddddddddddddddddddddddddddddddddddddddddddd */
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .m-btn {display: block;}
+    .m-detail-pro-img {display: block;}
+
+    main {margin: 10% 0 40% 0;}
+
+    .contents > .detail > .btn {display: none;}
+    .detail-pro-img {display: none;}
+
+    .contents > .m-detail-pro-img {
+        width: 100%; 
+
+        display: flex;
+        justify-content: center;
+    }
+    .contents > .m-detail-pro-img > p {width: 74%; }
+    .contents > .m-detail-pro-img > div {
+        width: 20%; margin: 0 0 0 2%;
+        display: flex;
+        flex-direction: column;
+
+        height: 71vw;
+        overflow-y: auto;
+    }
+    .contents > .m-detail-pro-img > div > img {
+        margin-bottom: 10%;
+        flex-shrink: 0;
+    }
+    .contents > .m-detail-pro-img > div::-webkit-scrollbar {display: none;}
+    .contents > .m-detail-pro-img img {width: 100%;}
+    .contents > .detail {width: 96%; margin: 0 auto;}
+
+    .contents > .detail > .txt {
+        width: 100%;
+        margin: 5% 0 10% 0;
+        position: relative;
+    }
+
+    .contents > .detail > .txt > p:nth-of-type(1) {
+        color: #505050; font-size: 2.4vw;
+    }
+    .contents > .detail > .txt > p:nth-of-type(2) {
+        font-size: 3.2vw;
+        margin: 2px 0 16px 0;
+    }
+    .contents > .detail > .txt > p:nth-of-type(3) {
+        font-size: 3.6vw;
+        position: absolute;
+        top: 20%; right: 4%;
+    }
+    .contents > .detail > .txt > p > span {
+        font-size: 4vw;
+        font-weight: 600;
+    }
+    .contents > .detail > .option {margin: 10% 0;}
+    .contents > .detail > .option > .size {width: 90%;}
+    .contents > .detail > .option > .size > p {
+        font-size: 2vw;
+        margin: 2% 0;
+    }
+    .contents > .detail > .option > .size > ul > li > label {
+        width: 10vw;
+        font-size: 2vw; 
+        text-align: center;
+        padding: 10% 0;
+    }
+
+    .contents > .detail > .option > .color > p {
+        font-size: 2vw;
+        margin: 2% 0;
+    }
+    .contents > .detail > .option > .color > div > label {
+        width: 10vw;
+        font-size: 2vw; 
+        text-align: center;
+        padding: 0.8% 0;
+    }
+    .contents > .detail > .option > .quantity > p {
+        font-size: 2vw;
+        margin: 2% 0;
+    }
+    .contents > .detail > .option > .quantity > div > input {font-size: 2vw;}
+    .contents > .detail > .m-btn {
+        width: 100%; 
+
+        display: flex;
+        justify-content: center;
+
+        position: fixed; bottom: 0; left: 0;
+
+        background-color: #FFFFFF;
+        z-index: 2;
+    }
+    .contents > .detail > .m-btn > span {
+        font-size: 2vw; text-align: center;
+        border-radius: 10px;
+        border: 2px solid #000000;
+        background-color: #FFFFFF;
+        
+        width: 42vw;
+        margin: 1% 2%;
+        padding: 3%;
+    }
+    .contents > .detail > .m-btn > span:nth-of-type(2) {
+        background-color: #000000;
+        color: #FFFFFF;
+    }
+    .contents > .detail > .more-detail {
+        width: 100%;
+        margin: 0 auto;
+    }
+    .contents > .detail > .more-detail > p {font-size: 2vw;}
+    .detail-reco {
+        width: 90%;
+        margin-bottom: 12%;
+    }
+}

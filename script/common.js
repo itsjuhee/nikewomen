@@ -1,0 +1,45 @@
+// menu //
+
+const elBtnMenu = document.querySelector('.m-btn-menu');
+const elMenu = document.querySelector('.m-menu');
+const elMenuClose = document.querySelector('.close');
+
+elBtnMenu.addEventListener('click', function(){elMenu.classList.add('active');});
+elMenuClose.addEventListener('click', function(){elMenu.classList.remove('active');});
+
+// quick-view //
+
+const elQuickview = document.querySelector('.quickview');
+const elPopup = document.querySelector('.popup');
+const elQuickClose = document.querySelector('.quick-close');
+
+
+elQuickview.addEventListener('click', function(){elPopup.classList.add('active');});
+elQuickClose.addEventListener('click', function(){elPopup.classList.remove('active');});
+
+// collection popup //
+
+const elBtndetail = document.querySelector('.btn-detail');
+const elCollectmore = document.querySelector('.collect-more');
+
+
+elBtndetail.addEventListener('click', function(){elCollectmore.classList.add('active');});
+elCollectmore.addEventListener('click', function(){elCollectmore.classList.remove('active');});
+
+
+// input + / - //
+
+const
+quantity = document.querySelector('.quantity > div > input'),
+btn_plus = document.querySelector('.plus'),
+btn_minus = document.querySelector('.minus');
+
+let
+num = 1;
+
+btn_plus.addEventListener('click', function(){
+    quantity.value = ++ num;
+});
+btn_minus.addEventListener('click', function(){
+    quantity.value = -- num;
+});

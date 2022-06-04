@@ -1,19 +1,19 @@
 @import url(./common.css);
 
 body {background-color: rgba(0, 0, 0, 0.2);}
-main {margin: 80px 0 500px 0;}
+main {margin: 5%;}
 
 
-.log {
-    position: fixed;
-    width: 100%;
-}
+.log {width: 100%;}
 h2 {
     text-align: center;
     margin-bottom: 32px;
+
+    font-size: 24px;
+    font-weight: 600;
 }
 .popup-log {
-    width: 22%;
+    width: 480px;
     margin: 0 auto;
     padding: 30px;
 
@@ -23,11 +23,10 @@ h2 {
     box-shadow: 10px 10px 4px 0px rgba(0, 0, 0, 0.2);
 }
 
-.popup-log > .id {}
 .popup-log > .id > label {font-size: 0;}
 .popup-log > .id > input {
     width: 100%;
-    padding: 20px 0;
+    padding: 5% 0;
     border: none; border-bottom: 1px solid #dbdbdb;
 }
 
@@ -38,7 +37,7 @@ h2 {
 .popup-log > .password > label {font-size: 0;}
 .popup-log > .password > input {
     width: 100%;
-    padding: 20px 0;
+    padding: 5% 0;
     border: none; border-bottom: 1px solid #dbdbdb;
 }
 .popup-log > .password > a {
@@ -74,7 +73,7 @@ h2 {
     background-color: #000000;
     color: #FFFFFF;
 }
-.popup-log > .sns {}
+
 .popup-log > .sns > p {
     text-align: center;
     color: #767676;
@@ -91,4 +90,45 @@ h2 {
     font-size: 12px;
 
     margin-top: 40px;
+}
+
+/* <!-- mobileeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee --> */
+
+@media (max-width: 767px) {
+
+h1 {display: none;}
+
+.log {
+    position: fixed;
+    left: 50%; top: 50%;
+    transform: translate(-50%, -50%);
+}
+.popup-log {
+    width: 90%;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+.popup-log > .opt > .keep > label {
+    color: #767676;
+    width: 100%;
+    font-size: 14px;
+}
+.popup-log > .opt > .find {
+    text-align: right;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.popup-log > .opt > .find > a {
+    font-size: 14px;
+}
+.popup-log > .sns > p {
+    font-size: 12px;
+}
+.popup-log > .nomem {
+    margin-top: 5%;
+}
+
 }
