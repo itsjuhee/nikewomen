@@ -27,10 +27,10 @@ elBtndetail.addEventListener('click', function(){elCollectmore.classList.add('ac
 elCollectmore.addEventListener('click', function(){elCollectmore.classList.remove('active');});
 
 
-// input + / - //
+// quantity + - //
 
 const
-quantity = document.querySelector('.quantity > div > input'),
+quantity = document.querySelector('.qua-res'),
 btn_plus = document.querySelector('.plus'),
 btn_minus = document.querySelector('.minus');
 
@@ -38,8 +38,8 @@ let
 num = 1;
 
 btn_plus.addEventListener('click', function(){
-    quantity.value = ++ num;
+    quantity.textContent = ++ num;
 });
 btn_minus.addEventListener('click', function(){
-    quantity.value = -- num;
+    quantity.textContent = -- num;
 });

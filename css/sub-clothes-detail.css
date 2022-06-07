@@ -83,6 +83,26 @@ main {margin: 5% 2% 30% 2%;}
 
 .contents > .detail > .option > .quantity > p {font-size: 16px; margin: 1% 0;}
 
+.contents > .detail > .option > .quantity > div {
+    display: flex;
+    align-items: center;
+}
+.contents > .detail > .option > .quantity > div > .qua-res {
+    font-size: 18px;
+    margin: 0 2%;
+}
+.contents > .detail > .option > .quantity > div > .plus {
+    background: url(../resources/00.logo/plus.png) center no-repeat;
+    font-size: 0;
+    width: 25px; height: 25px;
+    margin: 0 1%;
+}
+.contents > .detail > .option > .quantity > div > .minus {
+    background: url(../resources/00.logo/minus.png) center no-repeat;
+    font-size: 0;
+    width: 25px; height: 25px;
+    margin: 0 1%;
+}
 .contents > .detail > .btn {
     width: 100%;
     margin: 10% 0;
