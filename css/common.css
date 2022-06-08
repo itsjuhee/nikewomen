@@ -44,6 +44,7 @@ img {vertical-align: top;}
 
 .header-b {
     padding: 20px 0;
+
     position: relative;
 }
 .header-b > .icon {
@@ -534,9 +535,7 @@ footer {display: none;}
 .mobile header {
     width: 100%;
     position: relative;
-
-    /* position: fixed; top: 0;
-    z-index: 2; */
+    z-index: 2;
 }
 
 .mobile header h1 > a {
