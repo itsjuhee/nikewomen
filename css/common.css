@@ -540,7 +540,7 @@ footer {display: none;}
 
 .mobile header h1 > a {
     margin-top: 8px;
-    font-size: 24px;
+    font-size: 6vw;
     font-weight: 700;
 
     position: absolute;

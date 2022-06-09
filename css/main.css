@@ -236,7 +236,7 @@ body {background-color: #f8f8f8;}
     width: 100%;
     position: relative;
 }
-.m-main-img > img {
+.m-main-img > a > img {
     width: 100%;
 }
 
