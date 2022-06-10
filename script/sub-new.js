@@ -28,8 +28,12 @@ let
 num = 1;
 
 btn_plus.addEventListener('click', function(){
-    quantity.textContent = ++ num;
+    if (num < 5){
+        quantity.textContent = ++ num;
+    }
 });
 btn_minus.addEventListener('click', function(){
-    quantity.textContent = -- num;
+    if (num > 0){
+        quantity.textContent = -- num;
+    }
 });
