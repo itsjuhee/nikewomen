@@ -10,6 +10,10 @@
 
     <link href="./css/main.css" rel="stylesheet">
     <script defer src="./script/common.js"></script>
+
+    <!-- Link Swiper's CSS -->
+    <link href="https://unpkg.com/swiper/swiper-bundle.min.css" rel="stylesheet" />
+    <link href="./slide/slide_swiper.css" rel="stylesheet">
 </head>
 <body>
     <!-- mobile.ver 따로 생성해서 pc.ver {display : none ;} -->
@@ -268,8 +272,6 @@
     </footer>
 </div>
 
-
-
 <!-- mobileeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee -->
 <div class="mobile">
     <header>
@@ -292,48 +294,64 @@
                 <a href="./wishlist.html"> WISHLIST </a>
                 <a href="./cart.html"> CART </a>
             </div>
+            <!-- <a href="./index.html"> HOME </a> -->
         </div>
     </header>
     
     <main>
-        <div class="m-main-img">
-            <a href="./sub-new.html"><img src="./resources/10.mobile/m-main-01.jpg" alt="main-01"></a>
-            <a href="./sub-shoes.html"><img src="./resources/10.mobile/m-main-02.jpg" alt="main-02"></a>
-            <a href="./sub-clothes.html"><img src="./resources/10.mobile/m-main-03.jpg" alt="main-03"></a>
-            <a href="./sub-collection.html"><img src="./resources/10.mobile/m-main-04.jpg" alt="main-04"></a>
-        </div>
-        <div class="m-ind">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
+        <!-- Swiper -->
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><a href="./sub-new.html"><img src="./resources/10.mobile/m-main-01.jpg" alt="main-01"></a></div>
+                <div class="swiper-slide"><a href="./sub-shoes.html"><img src="./resources/10.mobile/m-main-02.jpg" alt="main-02"></a></div>
+                <div class="swiper-slide"><a href="./sub-clothes.html"><img src="./resources/10.mobile/m-main-03.jpg" alt="main-03"></a></div>
+                <div class="swiper-slide"><a href="./sub-collection.html"><img src="./resources/10.mobile/m-main-04.jpg" alt="main-04"></a></div>
+                <div class="swiper-slide">
+                    <footer>
+                        <div class="m-sns">
+                            <a> twitter </a>
+                            <a> instagram </a>
+                            <a> facebook </a>
+                            <a> youtube </a>
+                        </div>
+                        <div class="m-info">
+                            <span> (유)나이키코리아 </span>
+                            <div>
+                                <p> 대표 : Kimberlee Lynn Chang Mendes </p>
+                                <p> 서울 강남구 테헤란로 152 강남파이낸스센터 30층 </p>
+                                <p> 등록번호 : 220-88-09068 </p>
+                                <p> 통신판매업신고번호 : 2011-서울강남-03461 </p>
+                                <p> 팩스 : 02-6744-5880 </p>
+                                <p> 이메일 : service@nike.co.kr </p>
+                                <p> 고객센터 전화문의 : 080-022-0182 </p>
+                                <p> ⓒ 2022 Nike, Inc. All Rights Reserved </p>
+                            </div>
+                        </div>
+                    </footer>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
         </div>
     </main>
     
-    <footer>
-        <div class="m-sns">
-            <a> twitter </a>
-            <a> instagram </a>
-            <a> facebook </a>
-            <a> youtube </a>
-        </div>
-        <div class="m-info">
-            <span> (유)나이키코리아 </span>
-            <div>
-                <p> 대표 : Kimberlee Lynn Chang Mendes </p>
-                <p> 서울 강남구 테헤란로 152 강남파이낸스센터 30층 </p>
-                <p> 등록번호 : 220-88-09068 </p>
-                <p> 통신판매업신고번호 : 2011-서울강남-03461 </p>
-                <p> 팩스 : 02-6744-5880 </p>
-                <p> 이메일 : service@nike.co.kr </p>
-                <p> 고객센터 전화문의 : 080-022-0182 </p>
-                <p> ⓒ 2022 Nike, Inc. All Rights Reserved </p>
-            </div>
-        </div>
-    </footer>
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            direction: "vertical",
+            slidesPerView: 1,
+            spaceBetween: 30,
+            mousewheel: true,
+            pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+            },
+        });
+    </script>
+
 </div>
-
-
 
 </body>
 </html>
