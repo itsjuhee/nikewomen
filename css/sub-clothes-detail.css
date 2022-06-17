@@ -200,28 +200,13 @@ main {margin: 20% 0 40% 0;}
 .detail-pro-img {display: none;}
 
 .contents > .m-detail-pro-img {
-    width: 100%; 
+    width: 98%; 
+    height: 50vh;
+    margin: 0 auto;
 
     display: flex;
-    justify-content: center;
 }
-.contents > .m-detail-pro-img > p {
-    width: 70%; 
-}
-.contents > .m-detail-pro-img > div {
-    width: 20%; margin: 0 0 0 2%;
-    display: flex;
-    flex-direction: column;
 
-    height: 67vw;
-    overflow-y: auto;
-}
-.contents > .m-detail-pro-img > div > img {
-    margin-bottom: 10%;
-    flex-shrink: 0;
-}
-.contents > .m-detail-pro-img > div::-webkit-scrollbar {display: none;}
-.contents > .m-detail-pro-img img {width: 100%;}
 .contents > .detail {
     width: 96%; margin: 0 auto;
 }
@@ -275,7 +260,9 @@ main {margin: 20% 0 40% 0;}
     font-size: 3.3vw;
     margin: 2% 0;
 }
-
+.contents > .detail > .option > .quantity > div > .qua-res {
+    font-size: 3.2vw;
+}
 .contents > .detail > .m-btn {
     width: 100%; 
 
@@ -285,6 +272,8 @@ main {margin: 20% 0 40% 0;}
     position: fixed; bottom: 0; left: 0;
 
     background-color: #FFFFFF;
+
+    z-index: 9;
 }
 .contents > .detail > .m-btn > span {
     font-size: 2.4vw; text-align: center;
@@ -319,26 +308,12 @@ main {margin: 20% 0 40% 0;}
     .detail-pro-img {display: none;}
 
     .contents > .m-detail-pro-img {
-        width: 100%; 
+        width: 98%; 
+        height: 50vh;
+        margin: 0 auto;
 
         display: flex;
-        justify-content: center;
     }
-    .contents > .m-detail-pro-img > p {width: 74%; }
-    .contents > .m-detail-pro-img > div {
-        width: 20%; margin: 0 0 0 2%;
-        display: flex;
-        flex-direction: column;
-
-        height: 71vw;
-        overflow-y: auto;
-    }
-    .contents > .m-detail-pro-img > div > img {
-        margin-bottom: 10%;
-        flex-shrink: 0;
-    }
-    .contents > .m-detail-pro-img > div::-webkit-scrollbar {display: none;}
-    .contents > .m-detail-pro-img img {width: 100%;}
     .contents > .detail {width: 96%; margin: 0 auto;}
 
     .contents > .detail > .txt {
