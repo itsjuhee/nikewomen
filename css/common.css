@@ -578,6 +578,7 @@ footer {display: none;}
     position: fixed; top: 0; right: 0;
 
     display: none;
+    z-index: 2;
 }
 .mobile .m-menu > a {
     font-size: 16px; font-weight: 400;
