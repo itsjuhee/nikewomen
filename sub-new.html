@@ -10,6 +10,10 @@
 
     <link href="./css/sub-new.css" rel="stylesheet">
     <script defer src="./script/sub-new.js"></script>
+    
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link href="./slide/thumbs-gallery-loop.css" rel="stylesheet">
 </head>
 <body>
 
@@ -370,14 +374,29 @@
 
 <div class="popup">
     <div class="img">
-        <p> <img src="./resources/01.new/01-6/clothes-detail-01.jpg" alt="detail-01"> </p>
-        <div>
-            <img src="./resources/01.new/01-6/clothes-detail-02.jpg" alt="detail-02">
-            <img src="./resources/01.new/01-6/clothes-detail-03.jpg" alt="detail-03">
-            <img src="./resources/01.new/01-6/clothes-detail-04.jpg" alt="detail-04">
-            <img src="./resources/01.new/01-6/clothes-detail-05.jpg" alt="detail-05">
+        <!-- Swiper -->
+        <div class="swiper mySwiper2" style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="./resources/01.new/01-6/clothes-detail-01.jpg" alt="detail-01"></div>
+                <div class="swiper-slide"><img src="./resources/01.new/01-6/clothes-detail-02.jpg" alt="detail-02"></div>
+                <div class="swiper-slide"><img src="./resources/01.new/01-6/clothes-detail-03.jpg" alt="detail-03"></div>
+                <div class="swiper-slide"><img src="./resources/01.new/01-6/clothes-detail-04.jpg" alt="detail-04"></div>
+                <div class="swiper-slide"><img src="./resources/01.new/01-6/clothes-detail-05.jpg" alt="detail-05"></div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+        <div thumbsSlider="" class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="./resources/01.new/01-6/clothes-detail-01.jpg" alt="detail-01"></div>
+                <div class="swiper-slide"><img src="./resources/01.new/01-6/clothes-detail-02.jpg" alt="detail-02"></div>
+                <div class="swiper-slide"><img src="./resources/01.new/01-6/clothes-detail-03.jpg" alt="detail-03"></div>
+                <div class="swiper-slide"><img src="./resources/01.new/01-6/clothes-detail-04.jpg" alt="detail-04"></div>
+                <div class="swiper-slide"><img src="./resources/01.new/01-6/clothes-detail-05.jpg" alt="detail-05"></div>
+            </div>
         </div>
     </div>
+
     <div class="detail">
         <div class="txt">
             <p> 여성 우븐 러닝 재킷 AS </p>
@@ -435,6 +454,32 @@
             <span> 바로 구매하기 </span>
         </div>
     </div>
+
+<!-- Swiper JS -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<!-- Initialize Swiper -->
+<script>
+    var swiper = new Swiper(".mySwiper", {
+        loop: true,
+        spaceBetween: 10,
+        slidesPerView: 4,
+        freeMode: true,
+        watchSlidesProgress: true,
+    });
+    var swiper2 = new Swiper(".mySwiper2", {
+        loop: true,
+        spaceBetween: 10,
+        navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+        },
+        thumbs: {
+        swiper: swiper,
+        },
+    });
+</script>
+
 </div>
 
 <!-- img - a / quickview - span -->
