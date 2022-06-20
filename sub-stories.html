@@ -10,6 +10,12 @@
 
     <link href="./css/sub-stories.css" rel="stylesheet">
     <script defer src="./script/common.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script defer src="./load/load.js"></script>
+
+    <!-- Link Swiper's CSS -->
+    <link href="https://unpkg.com/swiper/swiper-bundle.min.css" rel="stylesheet" />
+    <link href="./slide/grab-cursor.css" rel="stylesheet">
 </head>
 <body>
     
@@ -83,12 +89,16 @@
                     </div>
                 </div>
                 <div class="sto-img"> 
-                    <p> <img src="./resources/05.stories/05-1/stories-detail-10.jpg" alt="stories-detail-01"> </p>
-                    <p> <img src="./resources/05.stories/05-1/stories-detail-11.jpg" alt="stories-detail-02"> </p>
-                    <p> <img src="./resources/05.stories/05-1/stories-detail-12.jpg" alt="stories-detail-03"> </p>
-                    <p> <img src="./resources/05.stories/05-1/stories-detail-13.jpg" alt="stories-detail-04"> </p>
-                    <p> <img src="./resources/05.stories/05-1/stories-detail-14.jpg" alt="stories-detail-05"> </p>
-                    <p> <img src="./resources/05.stories/05-1/stories-detail-15.jpg" alt="stories-detail-06"> </p>
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><img src="./resources/05.stories/05-1/stories-detail-10.jpg" alt="stories-detail-01"></div>
+                            <div class="swiper-slide"><img src="./resources/05.stories/05-1/stories-detail-11.jpg" alt="stories-detail-02"></div>
+                            <div class="swiper-slide"><img src="./resources/05.stories/05-1/stories-detail-12.jpg" alt="stories-detail-03"></div>
+                            <div class="swiper-slide"><img src="./resources/05.stories/05-1/stories-detail-13.jpg" alt="stories-detail-04"></div>
+                            <div class="swiper-slide"><img src="./resources/05.stories/05-1/stories-detail-14.jpg" alt="stories-detail-05"></div>
+                            <div class="swiper-slide"><img src="./resources/05.stories/05-1/stories-detail-15.jpg" alt="stories-detail-06"></div>
+                        </div>
+                    </div>
                 </div>
             </li>
             <li>
@@ -101,12 +111,16 @@
                     </div>
                 </div>
                 <div class="sto-img"> 
-                    <p> <img src="./resources/05.stories/05-2/stories-detail-08.jpg" alt="stories-detail-01"> </p>
-                    <p> <img src="./resources/05.stories/05-2/stories-detail-09.jpg" alt="stories-detail-02"> </p>
-                    <p> <img src="./resources/05.stories/05-2/stories-detail-10.jpg" alt="stories-detail-03"> </p>
-                    <p> <img src="./resources/05.stories/05-2/stories-detail-11.jpg" alt="stories-detail-04"> </p>
-                    <p> <img src="./resources/05.stories/05-2/stories-detail-12.jpg" alt="stories-detail-05"> </p>
-                    <p> <img src="./resources/05.stories/05-2/stories-detail-13.jpg" alt="stories-detail-06"> </p>
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><img src="./resources/05.stories/05-2/stories-detail-08.jpg" alt="stories-detail-01"></div>
+                            <div class="swiper-slide"><img src="./resources/05.stories/05-2/stories-detail-09.jpg" alt="stories-detail-02"></div>
+                            <div class="swiper-slide"><img src="./resources/05.stories/05-2/stories-detail-10.jpg" alt="stories-detail-03"></div>
+                            <div class="swiper-slide"><img src="./resources/05.stories/05-2/stories-detail-11.jpg" alt="stories-detail-04"></div>
+                            <div class="swiper-slide"><img src="./resources/05.stories/05-2/stories-detail-12.jpg" alt="stories-detail-05"></div>
+                            <div class="swiper-slide"><img src="./resources/05.stories/05-2/stories-detail-13.jpg" alt="stories-detail-06"></div>
+                        </div>
+                    </div>
                 </div>
             </li>
         </ul>
@@ -169,6 +183,37 @@
         </div>
     </div>
 </footer>
+
+<!-- Swiper JS -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<!-- Initialize Swiper -->
+<script>
+    var swiper = new Swiper(".mySwiper", {
+        direction: "horizontal",
+        slidesPerView: 2.5,
+        spaceBetween: 10,
+        mousewheel: true,
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+            },
+            breakpoints: {
+            640: {
+                slidesPerView: 2.5,
+                spaceBetween: 20,
+            },
+            768: {
+                slidesPerView: 3.5,
+                spaceBetween: 30,
+            },
+            1024: {
+                slidesPerView: 3.5,
+                spaceBetween: 40,
+            },
+            },
+        });
+</script>
 
 </body>
 </html>
