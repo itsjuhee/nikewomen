@@ -68,8 +68,8 @@ img {vertical-align: top;}
 }
 .header-b > .icon > span > a {
     font-size: 0;
-    width: 33px; height: 33px;
-    margin: 0 12px;
+    width: 24px; height: 24px;
+    margin: 0 8px;
 
     display: inline-block;
     vertical-align: middle;
@@ -141,8 +141,8 @@ img {vertical-align: top;}
 }
 .header-w > .icon > span > a {
     font-size: 0;
-    width: 33px; height: 33px;
-    margin: 0 12px;
+    width: 24px; height: 24px;
+    margin: 0 8px;
 
     display: inline-block;
     vertical-align: middle;
