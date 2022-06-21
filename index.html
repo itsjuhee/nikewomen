@@ -251,7 +251,7 @@
                 $('.main-02 li').each(function(i){
                     productImg = $('.main-02 li').eq(i).offset().top;
 
-                    if(productImg - winHeight){
+                    if(productImg - winHeight < scrollTop){
                         $('.main-02 li').eq(i).addClass('active')
                     }
                 });
