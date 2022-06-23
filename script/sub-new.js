@@ -69,35 +69,35 @@ $.ajax({
                         <ul>
                             <li>
                                 <input type="checkbox" id="75(XS)">
-                                <label for="75(XS)"> 75(XS) </label>
+                                <label for="75(XS)"> ${f[0].size1} </label>
                             </li>
                             <li>
                                 <input type="checkbox" id="80(S)">
-                                <label for="80(S)"> 80(S) </label>
+                                <label for="80(S)"> ${f[0].size2} </label>
                             </li>
                             <li>
                                 <input type="checkbox" id="85(M)">
-                                <label for="85(M)"> 85(M) </label>
+                                <label for="85(M)"> ${f[0].size3} </label>
                             </li>
                             <li>
                                 <input type="checkbox" id="90(L)">
-                                <label for="90(L)"> 90(L) </label>
+                                <label for="90(L)"> ${f[0].size4} </label>
                             </li>
                             <li>
                                 <input type="checkbox" id="95(XL)">
-                                <label for="95(XL)"> 95(XL) </label>
+                                <label for="95(XL)"> ${f[0].size5} </label>
                             </li>
                             <li>
                                 <input type="checkbox" id="100(2XL)">
-                                <label for="100(2XL)"> 100(2XL) </label>
+                                <label for="100(2XL)"> ${f[0].size6} </label>
                             </li>
                         </ul>
                     </div>
                     <div class="color">
                         <p> 색상 </p>
                         <div>
-                            <input type="radio" id="white" checked>
-                            <label for="white"> 화이트 </label>
+                            <input type="checkbox" id="color" checked>
+                            <label for="color"> ${f[0].color} </label>
                         </div>
                     </div>
                     <div class="quantity">
@@ -140,17 +140,25 @@ $.ajax({
             });
         </script>
         `;
-                        
+            
             $('.popup').html(elPopup);
-
             $('.popup').addClass('active');
 
             // close
             $('.quick-close').on('click', function(){
 
                 // if(event.target.className == 'popup active')
-
                 $('.popup').removeClass('active');
+            })
+            
+            // quantity + - 
+            let amount = 1;
+            const quantity = document.querySelector('.qua-res');
+            $('.plus').on('click', function(){
+                if (amount < 5) quantity.textContent = ++ amount;
+            })
+            $('.minus').on('click', function(){
+                if (amount > 0) quantity.textContent = -- amount;
             })
         })
     }
@@ -165,24 +173,3 @@ const elMenuClose = document.querySelector('.close');
 
 elBtnMenu.addEventListener('click', function(){elMenu.classList.add('active');});
 elMenuClose.addEventListener('click', function(){elMenu.classList.remove('active');});
-
-// quantity + - //
-
-const
-quantity = document.querySelector('.qua-res'),
-btn_plus = document.querySelector('.plus'),
-btn_minus = document.querySelector('.minus');
-
-let
-num = 1;
-
-btn_plus.addEventListener('click', function(){
-    if (num < 5){
-        quantity.textContent = ++ num;
-    }
-});
-btn_minus.addEventListener('click', function(){
-    if (num > 0){
-        quantity.textContent = -- num;
-    }
-});
