@@ -3,12 +3,12 @@ let data;
 $.ajax({
     url: './json/data.json', 
     success:function(data){        
-        let elNew = '';
+        let elMain = '';
 
         // 클릭하는 태그에 data-code 입력
         // new
         $.each(data.m_new, function(key, pro){
-            elNew = `  <li>
+            elMain = `  <li>
                             <div class="pro-img">
                                 <a class="btn-wish"> wishlist </a>
                                 <a class="product-img" href="./sub-clothes-detail.html"> 
@@ -21,11 +21,11 @@ $.ajax({
                                 <p><span>${pro.price}</span>원</p>
                             </div>
                         </li>`;
-            $('.main-02:nth-of-type(1) ul').append(elNew)
+            $('.main-02:nth-of-type(1) ul').append(elMain)
         })
         // recommendation
         $.each(data.m_rec, function(key, pro){
-            elNew = `  <li>
+            elMain = `  <li>
                             <div class="pro-img">
                                 <a class="btn-wish"> wishlist </a>
                                 <a class="product-img" href="./sub-clothes-detail.html"> 
@@ -38,7 +38,7 @@ $.ajax({
                                 <p><span>${pro.price}</span>원</p>
                             </div>
                         </li>`;
-            $('.main-02:nth-of-type(2) ul').append(elNew)
+            $('.main-02:nth-of-type(2) ul').append(elMain)
         })
         
         // quick view
