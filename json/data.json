@@ -1,4 +1,51 @@
 {
+    "m_new":[
+        {"code":23, 
+            "img":"./resources/01.new/01-3/shoes-detail-01.jpg", 
+            "img1":"./resources/01.new/01-3/shoes-detail-01.jpg", 
+            "img2":"./resources/01.new/01-3/shoes-detail-02.jpg", 
+            "img3":"./resources/01.new/01-3/shoes-detail-03.jpg", 
+            "img4":"./resources/01.new/01-3/shoes-detail-04.jpg", 
+            "img5":"./resources/01.new/01-3/shoes-detail-05.jpg", 
+            "cate":"여성 신발", "model":"나이키 TC 7900", "price":139000, "color":"블랙",
+            "size1":"220", "size2":"225", "size3":"230", "size4":"235", 
+            "size5":"240", "size6":"245", "size7":"250", "size8":"255"
+        },
+        {"code":31, 
+            "img":"./resources/01.new/01-4/clothes-detail-01.jpg", 
+            "img1":"./resources/01.new/01-4/clothes-detail-01.jpg", 
+            "img2":"./resources/01.new/01-4/clothes-detail-02.jpg", 
+            "img3":"./resources/01.new/01-4/clothes-detail-03.jpg", 
+            "img4":"./resources/01.new/01-4/clothes-detail-04.jpg", 
+            "img5":"./resources/01.new/01-4/clothes-detail-05.jpg", 
+            "cate":"여성 미드라이즈 우븐 팬츠 AS", "model":"나이키 스포츠웨어 에센셜 HBR", "price":84200, "color":"블랙",
+            "size1":"75(XS)", "size2":"80(S)", "size3":"85(M)", 
+            "size4":"90(L)", "size5":"95(XL)", "size6":"100(2XL)"
+        },
+        {"code":32, 
+            "img":"./resources/01.new/01-5/clothes-detail-01.jpg", 
+            "img1":"./resources/01.new/01-5/clothes-detail-01.jpg", 
+            "img2":"./resources/01.new/01-5/clothes-detail-02.jpg", 
+            "img3":"./resources/01.new/01-5/clothes-detail-03.jpg", 
+            "img4":"./resources/01.new/01-5/clothes-detail-04.jpg", 
+            "img5":"./resources/01.new/01-5/clothes-detail-05.jpg", 
+            "cate":"여성 미드라이즈 바이크 쇼츠 AS", "model":"나이키 스포츠웨어 에센셜", "price":35000, "color":"블랙",
+            "size1":"75(XS)", "size2":"80(S)", "size3":"85(M)", 
+            "size4":"90(L)", "size5":"95(XL)", "size6":"100(2XL)"
+        },
+        {"code":33, 
+            "img":"./resources/01.new/01-6/clothes-detail-01.jpg", 
+            "img1":"./resources/01.new/01-6/clothes-detail-01.jpg", 
+            "img2":"./resources/01.new/01-6/clothes-detail-02.jpg", 
+            "img3":"./resources/01.new/01-6/clothes-detail-03.jpg", 
+            "img4":"./resources/01.new/01-6/clothes-detail-04.jpg", 
+            "img5":"./resources/01.new/01-6/clothes-detail-05.jpg", 
+            "cate":"여성 반팔 티셔츠 AS", "model":"나이키 스포츠웨어 숏슬리브 티", "price":49000, "color":"화이트",
+            "size1":"75(XS)", "size2":"80(S)", "size3":"85(M)", 
+            "size4":"90(L)", "size5":"95(XL)", "size6":"100(2XL)"
+        }
+    ],
+    
     "new":[
         {"code":21, 
             "img":"./resources/01.new/01-1/shoes-detail-01.jpg",
