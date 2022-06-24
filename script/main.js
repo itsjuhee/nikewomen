@@ -6,6 +6,7 @@ $.ajax({
         let elNew = '';
 
         // 클릭하는 태그에 data-code 입력
+        // new
         $.each(data.m_new, function(key, pro){
             elNew = `  <li>
                             <div class="pro-img">
@@ -21,6 +22,23 @@ $.ajax({
                             </div>
                         </li>`;
             $('.main-02:nth-of-type(1) ul').append(elNew)
+        })
+        // recommendation
+        $.each(data.m_rec, function(key, pro){
+            elNew = `  <li>
+                            <div class="pro-img">
+                                <a class="btn-wish"> wishlist </a>
+                                <a class="product-img" href="./sub-clothes-detail.html"> 
+                                    <img src="${pro.img}" alt="product-img"> </a>
+                                <span class="quickview" data-code=${pro.code}> QUICK VIEW </span>
+                            </div>
+                            <div class="pro-txt">
+                                <p> ${pro.cate} </p>
+                                <p> ${pro.model} </p>
+                                <p><span>${pro.price}</span>원</p>
+                            </div>
+                        </li>`;
+            $('.main-02:nth-of-type(2) ul').append(elNew)
         })
         
         // quick view
@@ -138,7 +156,7 @@ $.ajax({
             });
         </script>
         `;
-            
+        
             $('.popup').html(elPopup);
             $('.popup').addClass('active');
 
