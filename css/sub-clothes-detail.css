@@ -1,10 +1,10 @@
 @import url(./common.css);
 
 
-main {margin: 5% 2% 30% 2%;}
+main {margin: 10% 2% 30% 2%;}
 
 .detail-pro-img {
-    width: 100%;
+    width: 70%;
 
     display: flex;
     flex-wrap: wrap;
@@ -14,7 +14,7 @@ main {margin: 5% 2% 30% 2%;}
 .detail-pro-img > p > img {width: 100%;}
 
 .contents > .detail {
-    width: 50%;
+    width: 40%;
     margin-left: 3%;
 }
 
@@ -146,13 +146,12 @@ main {margin: 5% 2% 30% 2%;}
 }
 
 .detail-reco {
-    width: 80%;
+    width: 70%;
     margin: 0 auto;
-    margin-bottom: 150px;
 }
 .detail-reco > p {
-    margin-bottom: 20px;
-    font-size: 32px;
+    margin-bottom: 5%;
+    font-size: 24px;
     font-weight: 400;
     text-align: center;
 }
@@ -302,7 +301,7 @@ main {margin: 20% 0 40% 0;}
     .m-btn {display: block;}
     .m-detail-pro-img {display: block;}
 
-    main {margin: 10% 0 40% 0;}
+    main {margin: 20% 0 40% 0;}
 
     .contents > .detail > .btn {display: none;}
     .detail-pro-img {display: none;}
