@@ -64,25 +64,25 @@
     background-position: center;
     }
 
-    .mySwiper2 {
+    .popupSwiper2 {
     height: auto;
     width: 100%;
     }
 
-    .mySwiper {
+    .popupSwiper {
     height: 20%;
     width: 100%;
     box-sizing: border-box;
     padding: 10px 0;
     }
 
-    .mySwiper .swiper-slide {
+    .popupSwiper .swiper-slide {
     width: 25%;
     height: 100%;
     opacity: 0.4;
     }
 
-    .mySwiper .swiper-slide-thumb-active {
+    .popupSwiper .swiper-slide-thumb-active {
     opacity: 1;
     }
 

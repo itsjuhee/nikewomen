@@ -245,7 +245,9 @@ body {background-color: #f8f8f8;}
 @media (max-width: 767px) {
     
 .web {display: none;}
-
+.mobile header {
+    padding-top: 0%;
+}
 .mobile main {
     width: 100%;
     position: relative;

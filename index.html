@@ -16,7 +16,7 @@
     <!-- Link Swiper's CSS -->
     <link href="https://unpkg.com/swiper/swiper-bundle.min.css" rel="stylesheet" />
     <link href="./slide/mousewheel-control.css" rel="stylesheet">
-    <link href="./slide/thumbs-gallery-loop.css" rel="stylesheet">
+    <!-- <link href="./slide/thumbs-gallery-loop.css" rel="stylesheet"> -->
 </head>
 <body>
     <!-- mobile.ver 따로 생성해서 pc.ver {display : none ;} -->
@@ -354,16 +354,19 @@
     </div> -->
 
     <!-- Swiper JS -->
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> -->
 
     <!-- Initialize Swiper -->
-    <script>
+    <!-- <script>
         var swiper = new Swiper(".mySwiper", {
             loop: true,
             spaceBetween: 10,
             slidesPerView: 4,
             freeMode: true,
             watchSlidesProgress: true,
+
+            observer: true,
+            observeParents: true,
         });
         var swiper2 = new Swiper(".mySwiper2", {
             loop: true,
@@ -375,8 +378,11 @@
             thumbs: {
             swiper: swiper,
             },
+
+            observer: true,
+            observeParents: true,
         });
-    </script>
+    </script> -->
 </div>
 
     <footer>
