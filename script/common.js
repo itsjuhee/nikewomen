@@ -47,4 +47,3 @@ btn_minus.addEventListener('click', function(){
         quantity.textContent = -- num;
     }
 });
-

@@ -1,9 +1,9 @@
 @import url(./common.css);
 
 body {background-color: rgba(0, 0, 0, 0.2);}
-main {margin: 5%;}
+main {margin: 10%;}
 
-
+.header-b {background-color: rgba(0, 0, 0, 0);}
 .log {width: 100%;}
 h2 {
     text-align: center;

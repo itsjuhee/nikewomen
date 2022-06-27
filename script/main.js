@@ -1,20 +1,19 @@
-// new
-
 let data;
 
 $.ajax({
     url: './json/data.json', 
     success:function(data){        
-        let elNew = '';
+        let elMain = '';
 
         // 클릭하는 태그에 data-code 입력
-        $.each(data.new, function(key, pro){
-            elNew = `  <li>
+        // new
+        $.each(data.m_new, function(key, pro){
+            elMain = `  <li>
                             <div class="pro-img">
                                 <a class="btn-wish"> wishlist </a>
                                 <a class="product-img" href="./sub-clothes-detail.html"> 
                                     <img src="${pro.img}" alt="product-img"> 
-                                    <img src="${pro.img5}" alt="product-img"> 
+                                    <img src="${pro.img5}" alt="product-img">
                                 </a>
                                 <span class="quickview" data-code=${pro.code}> QUICK VIEW </span>
                             </div>
@@ -24,7 +23,26 @@ $.ajax({
                                 <p><span>${pro.price}</span>원</p>
                             </div>
                         </li>`;
-            $('.product ul').append(elNew)
+            $('.main-02:nth-of-type(1) ul').append(elMain)
+        })
+        // recommendation
+        $.each(data.m_rec, function(key, pro){
+            elMain = `  <li>
+                            <div class="pro-img">
+                                <a class="btn-wish"> wishlist </a>
+                                <a class="product-img" href="./sub-clothes-detail.html"> 
+                                    <img src="${pro.img}" alt="product-img">
+                                    <img src="${pro.img5}" alt="product-img">
+                                </a>
+                                <span class="quickview" data-code=${pro.code}> QUICK VIEW </span>
+                            </div>
+                            <div class="pro-txt">
+                                <p> ${pro.cate} </p>
+                                <p> ${pro.model} </p>
+                                <p><span>${pro.price}</span>원</p>
+                            </div>
+                        </li>`;
+            $('.main-02:nth-of-type(2) ul').append(elMain)
         })
         
         // quick view
@@ -32,7 +50,7 @@ $.ajax({
         $('.quickview').on('click', function(){
             
             let code = $(this).data('code');
-            let f = data.new.filter(num => num.code == code);
+            let f = data.m_new.filter(num => num.code == code);
 
             let elPopup = `
             <div class="img">
@@ -142,7 +160,7 @@ $.ajax({
             });
         </script>
         `;
-            
+        
             $('.popup').html(elPopup);
             $('.popup').addClass('active');
 
@@ -165,6 +183,7 @@ $.ajax({
         })
     }
 });
+
 
 
 // menu //

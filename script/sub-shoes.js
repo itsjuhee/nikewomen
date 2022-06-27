@@ -1,15 +1,15 @@
-// new
+// shoes
 
 let data;
 
 $.ajax({
     url: './json/data.json', 
     success:function(data){        
-        let elNew = '';
+        let elShoes = '';
 
         // 클릭하는 태그에 data-code 입력
-        $.each(data.new, function(key, pro){
-            elNew = `  <li>
+        $.each(data.shoes, function(key, pro){
+            elShoes = `  <li>
                             <div class="pro-img">
                                 <a class="btn-wish"> wishlist </a>
                                 <a class="product-img" href="./sub-clothes-detail.html"> 
@@ -24,7 +24,7 @@ $.ajax({
                                 <p><span>${pro.price}</span>원</p>
                             </div>
                         </li>`;
-            $('.product ul').append(elNew)
+            $('.product ul').append(elShoes)
         })
         
         // quick view
@@ -32,7 +32,7 @@ $.ajax({
         $('.quickview').on('click', function(){
             
             let code = $(this).data('code');
-            let f = data.new.filter(num => num.code == code);
+            let f = data.shoes.filter(num => num.code == code);
 
             let elPopup = `
             <div class="img">

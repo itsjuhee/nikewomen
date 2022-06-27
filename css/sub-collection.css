@@ -3,7 +3,7 @@
 
 body {background-color: #000000;}
 
-main {margin: 80px 0 500px 0;}
+main {margin: 180px 0 500px 0;}
 main > .collection {width: 90%; margin: 0 auto;}
 main > .collection > ul {
     display: flex;
@@ -72,10 +72,18 @@ footer > .details > .ins > p {color: #FFFFFF;}
     margin: 0 1%;
     position: relative;
 }
+.collect-more > ul > li > .pro-img .btn-wish {z-index: 2;}
 .collect-more > ul > li > .pro-img {
     width: 100%;
     position: relative;
 }
+.collect-more > ul > li > .pro-img img:nth-of-type(2) {
+    width: 100%;
+    position: absolute; left: 0; top: 0;
+    transition: 0.3s;
+    opacity: 0;
+}
+.collect-more > ul > li > .pro-img:hover img:nth-of-type(2) {opacity: 1;}
 .collect-more > ul > li > .pro-img > a > img {width: 100%;}
 .collect-more > ul > li > .pro-img > span {
     width: 100%; 
@@ -88,6 +96,7 @@ footer > .details > .ins > p {color: #FFFFFF;}
     text-align: center;
     background-color: rgba(121, 121, 121, 0.5); 
     opacity: 0%;
+    z-index: 2;
 }
 .collect-more > ul > li > .pro-img:hover > span {
     transition: 0.5s;

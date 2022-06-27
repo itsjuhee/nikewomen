@@ -2,8 +2,8 @@
 
 
 body {background-color: #f8f8f8;}
-
-.main-img {margin: 0 auto; overflow: hidden;}
+.header-b {background-color: #f8f8f8;}
+.main-img {margin: 11vh auto; overflow: hidden;}
 .main-img > img {
     width: 100%;
 
@@ -42,6 +42,7 @@ body {background-color: #f8f8f8;}
 }
 .main-01 > ul > li > .pro-img > .btn-wish {
     background: url(../resources/00.header/wishlist.png) no-repeat center;
+    z-index: 2;
 }
 .main-01 > ul > li > .pro-img > a > img {width: 100%;}
 
@@ -49,6 +50,13 @@ body {background-color: #f8f8f8;}
     width: 100%;
     position: relative;
 }
+.main-01 > ul > li > .pro-img img:nth-of-type(2) {
+    width: 100%;
+    position: absolute; left: 0; top: 0;
+    transition: 0.3s;
+    opacity: 0;
+}
+.main-01 > ul > li > .pro-img:hover img:nth-of-type(2) {opacity: 1;}
 .main-01 > ul > li > .pro-img > span {
     width: 100%; 
     padding: 6% 12%;
@@ -60,6 +68,7 @@ body {background-color: #f8f8f8;}
     text-align: center;
     background-color: rgba(121, 121, 121, 0.5); 
     opacity: 0%;
+    z-index: 2;
 }
 .main-01 > ul > li > .pro-img:hover > span {
     transition: 0.5s;
@@ -106,10 +115,24 @@ body {background-color: #f8f8f8;}
     display: flex;
     justify-content: space-between;
 }
+
+/* scroll effect */
 .main-02 > ul > li {
     width: 32%;
     margin: 0 1%;
     position: relative;
+
+    opacity: 0;
+    transform: translateY(100%);
+}
+.main-02 > ul > li:nth-of-type(1) {transition: 1.2s;}
+.main-02 > ul > li:nth-of-type(2) {transition: 1.4s;}
+.main-02 > ul > li:nth-of-type(3) {transition: 1.6s;}
+.main-02 > ul > li:nth-of-type(4) {transition: 1.8s;}
+
+.main-02 > ul > li.active {
+    opacity: 1;
+    transform: translateY(0%);
 }
 
 
@@ -120,6 +143,14 @@ body {background-color: #f8f8f8;}
     width: 100%;
     position: relative;
 }
+.main-02 > ul > li > .pro-img > .btn-wish {z-index: 2;}
+.main-02 > ul > li > .pro-img img:nth-of-type(2) {
+    width: 100%;
+    position: absolute; left: 0; top: 0;
+    transition: 0.3s;
+    opacity: 0;
+}
+.main-02 > ul > li > .pro-img:hover img:nth-of-type(2) {opacity: 1;}
 .main-02 > ul > li > .pro-img > span {
     width: 100%; 
     padding: 6% 12%;
@@ -131,6 +162,7 @@ body {background-color: #f8f8f8;}
     text-align: center;
     background-color: rgba(121, 121, 121, 0.5); 
     opacity: 0%;
+    z-index: 2;
 }
 .main-02 > ul > li > .pro-img:hover > span {
     transition: 0.5s;
@@ -231,7 +263,9 @@ body {background-color: #f8f8f8;}
 @media (max-width: 767px) {
     
 .web {display: none;}
-
+.mobile header {
+    padding-top: 0%;
+}
 .mobile main {
     width: 100%;
     position: relative;

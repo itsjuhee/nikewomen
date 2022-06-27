@@ -9,33 +9,17 @@
     <link rel="icon" type="image/png" href="./resources/icon-16x16.png" sizes="16x16" />
 
     <link href="./css/sub-clothes.css" rel="stylesheet">
-    <script defer src="./script/common.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script defer src="./load/load.js"></script>
+    <script defer src="./script/sub-clothes.js"></script>
+    <script defer src="./load/common.js"></script>
+    
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link href="./slide/thumbs-gallery-loop.css" rel="stylesheet">
 </head>
 <body>
     
-<header class="header-b">
-    <div class="icon">
-        <a href="./index.html"> <img src="./resources/00.header/logo.png" alt="nike logo"> </a>
-        <h1><a href="./index.html"> NIKE WOMEN </a></h1>
-        <span>
-            <a href="#"> search </a>
-            <a href="./login.html"> login </a>
-            <a href="./wishlist.html"> wishlist </a>
-            <a href="./cart.html"> cart </a>
-        </span>
-    </div>
-    <div class="menu">
-        <nav>
-            <a href="./sub-new.html"> new </a>
-            <a href="./sub-shoes.html"> shoes </a>
-            <a href="./sub-clothes.html"> clothes </a>
-            <a href="./sub-collection.html"> collection </a>
-            <a href="./sub-stories.html"> stories </a>
-        </nav>
-    </div>
-
+<header class="header-b"></header>
 <!-- mobileeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee -->
 <div class="mobile">
     <header>
@@ -62,7 +46,7 @@
     </header>
 </div>
 
-</header>
+
 
 <main>
     <div class="sub-header">
@@ -251,6 +235,7 @@
         </div>
         <div class="product">
             <ul>
+                <!-- 
                 <li>
                     <div class="pro-img">
                         <a class="btn-wish"> wishlist </a>
@@ -328,12 +313,149 @@
                         <p> 나이키 스포츠웨어 크롭 티셔츠 </p>
                         <p><span>49,000</span>원</p>
                     </div>
-                </li>
+                </li> -->
             </ul>
         </div>
     </div>
-    
 </main>
+
+<!-- scroll header -->
+<script>
+    let scrollState = {y: 0, y2: 0, state:'down'}
+    
+    function scrollHeader(){
+        scrollState.y = $(window).scrollTop();
+
+        if(scrollState.y > scrollState.y2){
+            scrollState.state = true;
+        }else{
+            scrollState.state = false;
+        }
+        scrollState.y2 = scrollState.y;
+    }
+
+    function header(){
+        scrollHeader();
+
+        if(scrollState.state){
+            $('.header-b').addClass('active');
+        }else{
+            $('.header-b').removeClass('active');
+        }
+    }
+    
+    $(window).on('scroll', header);
+</script>
+
+<div class="popup">
+    <!-- <div class="img">
+        
+        <div class="swiper mySwiper2" style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="./resources/01.new/01-6/clothes-detail-01.jpg" alt="detail-01"></div>
+                <div class="swiper-slide"><img src="./resources/01.new/01-6/clothes-detail-02.jpg" alt="detail-02"></div>
+                <div class="swiper-slide"><img src="./resources/01.new/01-6/clothes-detail-03.jpg" alt="detail-03"></div>
+                <div class="swiper-slide"><img src="./resources/01.new/01-6/clothes-detail-04.jpg" alt="detail-04"></div>
+                <div class="swiper-slide"><img src="./resources/01.new/01-6/clothes-detail-05.jpg" alt="detail-05"></div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+        <div thumbsSlider="" class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="./resources/01.new/01-6/clothes-detail-01.jpg" alt="detail-01"></div>
+                <div class="swiper-slide"><img src="./resources/01.new/01-6/clothes-detail-02.jpg" alt="detail-02"></div>
+                <div class="swiper-slide"><img src="./resources/01.new/01-6/clothes-detail-03.jpg" alt="detail-03"></div>
+                <div class="swiper-slide"><img src="./resources/01.new/01-6/clothes-detail-04.jpg" alt="detail-04"></div>
+                <div class="swiper-slide"><img src="./resources/01.new/01-6/clothes-detail-05.jpg" alt="detail-05"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="detail">
+        <div class="txt">
+            <p> 여성 우븐 러닝 재킷 AS </p>
+            <p> 나이키 스포츠웨어 숏슬리브 티 </p>
+            <p><span>49,000</span>원</p>
+        </div>
+        <div class="option">
+            <div class="size">
+                <p> 사이즈 </p>
+                <ul>
+                    <li>
+                        <input type="checkbox" id="75(XS)">
+                        <label for="75(XS)"> 75(XS) </label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="80(S)">
+                        <label for="80(S)"> 80(S) </label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="85(M)">
+                        <label for="85(M)"> 85(M) </label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="90(L)">
+                        <label for="90(L)"> 90(L) </label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="95(XL)">
+                        <label for="95(XL)"> 95(XL) </label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="100(2XL)">
+                        <label for="100(2XL)"> 100(2XL) </label>
+                    </li>
+                </ul>
+            </div>
+            <div class="color">
+                <p> 색상 </p>
+                <div>
+                    <input type="radio" id="white" checked>
+                    <label for="white"> 화이트 </label>
+                </div>
+            </div>
+            <div class="quantity">
+                <p> 수량 </p>
+                <div>
+                    <div class="qua-res"> 0 </div>
+                    <a class="plus"> + </a> <a class="minus"> - </a>
+                </div>
+            </div>
+        </div>
+        <span class="quick-close"> X </span>
+        <div class="btn">
+            <span> 장바구니 담기 </span>
+            <span> 바로 구매하기 </span>
+        </div>
+    </div> -->
+
+<!-- Swiper JS -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<!-- Initialize Swiper -->
+<script>
+    var swiper = new Swiper(".mySwiper", {
+        loop: true,
+        spaceBetween: 10,
+        slidesPerView: 4,
+        freeMode: true,
+        watchSlidesProgress: true,
+    });
+    var swiper2 = new Swiper(".mySwiper2", {
+        loop: true,
+        spaceBetween: 10,
+        navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+        },
+        thumbs: {
+        swiper: swiper,
+        },
+    });
+</script>
+
+</div>
 
 <footer>
     <div class="title">
@@ -369,31 +491,6 @@
         </div>
     </div>
 </footer>
-
-<!-- mobileeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee -->
-<div class="mobile">
-    <footer>
-        <div class="m-sns">
-            <a> twitter </a>
-            <a> instagram </a>
-            <a> facebook </a>
-            <a> youtube </a>
-        </div>
-        <div class="m-info">
-            <span> (유)나이키코리아 </span>
-            <div>
-                <p> 대표 : Kimberlee Lynn Chang Mendes </p>
-                <p> 서울 강남구 테헤란로 152 강남파이낸스센터 30층 </p>
-                <p> 등록번호 : 220-88-09068 </p>
-                <p> 통신판매업신고번호 : 2011-서울강남-03461 </p>
-                <p> 팩스 : 02-6744-5880 </p>
-                <p> 이메일 : service@nike.co.kr </p>
-                <p> 고객센터 전화문의 : 080-022-0182 </p>
-                <p> ⓒ 2022 Nike, Inc. All Rights Reserved </p>
-            </div>
-        </div>
-    </footer>
-</div>
 
 </body>
 </html>
