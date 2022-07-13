@@ -266,7 +266,7 @@ body {background-color: #f8f8f8;}
 .mobile header {
     padding-top: 0%;
 }
-.mobile main {
+.mobile .main {
     width: 100%;
     position: relative;
 }
