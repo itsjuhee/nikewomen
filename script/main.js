@@ -134,11 +134,7 @@ $.ajax({
                     <span> 바로 구매하기 </span>
                 </div>
             </div>
-        
-        <!-- Swiper JS -->
-        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-        
-        <!-- Initialize Swiper -->
+
         <script>
             var swiper = new Swiper(".mySwiper", {
                 loop: true,
@@ -184,9 +180,56 @@ $.ajax({
     }
 });
 
+// scroll products //
 
+function init(){
+    let scrollTop;
+    let productImg;
+    let winHeight = $(window).height();
 
-// menu //
+    $(window).on('scroll', function(){
+
+        scrollTop = $(window).scrollTop();
+
+        $('.main-02 li').each(function(i){
+            productImg = $('.main-02 li').eq(i).offset().top;
+
+            if(productImg - scrollTop < winHeight){
+                $('.main-02 li').eq(i).addClass('active')
+            }
+        });
+    });
+}
+$(window).on('load', init);
+
+// scroll header //
+
+let scrollState = {y: 0, y2: 0, state:'down'}
+        
+        function scrollHeader(){
+            scrollState.y = $(window).scrollTop();
+
+            if(scrollState.y > scrollState.y2){
+                scrollState.state = true;
+            }else{
+                scrollState.state = false;
+            }
+            scrollState.y2 = scrollState.y;
+        }
+
+        function header(){
+            scrollHeader();
+
+            if(scrollState.state){
+                $('.header-b').addClass('active');
+            }else{
+                $('.header-b').removeClass('active');
+            }
+        }
+        
+        $(window).on('scroll', header);
+
+// mobile menu //
 
 const elBtnMenu = document.querySelector('.m-btn-menu');
 const elMenu = document.querySelector('.m-menu');
@@ -194,3 +237,16 @@ const elMenuClose = document.querySelector('.close');
 
 elBtnMenu.addEventListener('click', function(){elMenu.classList.add('active');});
 elMenuClose.addEventListener('click', function(){elMenu.classList.remove('active');});
+
+// mobile main //
+
+var swiper = new Swiper(".mySwiper", {
+    direction: "vertical",
+    slidesPerView: 1,
+    spaceBetween: 30,
+    mousewheel: true,
+    pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+    },
+});

@@ -1,4 +1,4 @@
-// menu //
+// mobile menu //
 
 const elBtnMenu = document.querySelector('.m-btn-menu');
 const elMenu = document.querySelector('.m-menu');

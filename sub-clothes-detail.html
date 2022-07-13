@@ -8,20 +8,20 @@
     <link rel="icon" type="image/png" href="./resources/icon-32x32.png" sizes="32x32" />
     <link rel="icon" type="image/png" href="./resources/icon-16x16.png" sizes="16x16" />
 
-    <link href="./css/sub-clothes-detail.css" rel="stylesheet">
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script defer src="./script/sub-clothes-detail.js"></script>
     <script defer src="./load/common.js"></script>
-
-    <!-- Link Swiper's CSS -->
+    
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link href="./css/sub-clothes-detail.css" rel="stylesheet">
     <link href="./slide/m-detatil.css" rel="stylesheet">
 </head>
 <body>
 
 <header class="header-b"></header>
 
-<!-- mobileeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee -->
+<!-- mobile version -->
 <div class="mobile">
     <header>
         <h1> <a href="./index.html"> NIKE WOMEN </a> </h1>
@@ -57,7 +57,7 @@
             <p><img src="./resources/03.clothes/03-3/clothes-detail-05.jpg" alt="detail-05"></p>
         </div>
         <div class="m-detail-pro-img">
-            <!-- Swiper -->
+
         <div class="swiper mySwiper2" style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff">
             <div class="swiper-wrapper">
                 <div class="swiper-slide"><img src="./resources/03.clothes/03-3/clothes-detail-01.jpg" alt="detail-01"></div>
@@ -198,60 +198,6 @@
         </ul>
     </div>
 </footer>
-
-<!-- scroll header -->
-<script>
-    let scrollState = {y: 0, y2: 0, state:'down'}
-    
-    function scrollHeader(){
-        scrollState.y = $(window).scrollTop();
-
-        if(scrollState.y > scrollState.y2){
-            scrollState.state = true;
-        }else{
-            scrollState.state = false;
-        }
-        scrollState.y2 = scrollState.y;
-    }
-
-    function header(){
-        scrollHeader();
-
-        if(scrollState.state){
-            $('.header-b').addClass('active');
-        }else{
-            $('.header-b').removeClass('active');
-        }
-    }
-    
-    $(window).on('scroll', header);
-</script>
-
-<!-- Swiper JS -->
-<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-
-<!-- Initialize Swiper -->
-<script>
-    var swiper = new Swiper(".mySwiper", {
-        loop: true,
-        direction: "vertical",
-        spaceBetween: 10,
-        slidesPerView: 3.2,
-        freeMode: true,
-        watchSlidesProgress: true,
-    });
-    var swiper2 = new Swiper(".mySwiper2", {
-        loop: true,
-        spaceBetween: 10,
-        navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-        },
-        thumbs: {
-        swiper: swiper,
-        },
-    });
-</script>
 
 </body>
 </html>

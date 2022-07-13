@@ -7,7 +7,6 @@ $.ajax({
     success:function(data){        
         let elClothes = '';
 
-        // 클릭하는 태그에 data-code 입력
         $.each(data.clothes, function(key, pro){
             elClothes = `  <li>
                             <div class="pro-img">
@@ -116,11 +115,7 @@ $.ajax({
                     <span> 바로 구매하기 </span>
                 </div>
             </div>
-        
-        <!-- Swiper JS -->
-        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-        
-        <!-- Initialize Swiper -->
+
         <script>
             var swiper = new Swiper(".mySwiper", {
                 loop: true,
@@ -166,8 +161,55 @@ $.ajax({
     }
 });
 
+// scroll header //
 
-// menu //
+let scrollState = {y: 0, y2: 0, state:'down'}
+    
+function scrollHeader(){
+    scrollState.y = $(window).scrollTop();
+
+    if(scrollState.y > scrollState.y2){
+        scrollState.state = true;
+    }else{
+        scrollState.state = false;
+    }
+    scrollState.y2 = scrollState.y;
+}
+
+function header(){
+    scrollHeader();
+
+    if(scrollState.state){
+        $('.header-b').addClass('active');
+    }else{
+        $('.header-b').removeClass('active');
+    }
+}
+
+$(window).on('scroll', header);
+
+// popup //
+
+var swiper = new Swiper(".mySwiper", {
+    loop: true,
+    spaceBetween: 10,
+    slidesPerView: 4,
+    freeMode: true,
+    watchSlidesProgress: true,
+});
+var swiper2 = new Swiper(".mySwiper2", {
+    loop: true,
+    spaceBetween: 10,
+    navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+    },
+    thumbs: {
+    swiper: swiper,
+    },
+});
+
+// mobile menu //
 
 const elBtnMenu = document.querySelector('.m-btn-menu');
 const elMenu = document.querySelector('.m-menu');

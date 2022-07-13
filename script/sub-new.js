@@ -166,8 +166,55 @@ $.ajax({
     }
 });
 
+// scroll header //
 
-// menu //
+let scrollState = {y: 0, y2: 0, state:'down'}
+    
+function scrollHeader(){
+    scrollState.y = $(window).scrollTop();
+
+    if(scrollState.y > scrollState.y2){
+        scrollState.state = true;
+    }else{
+        scrollState.state = false;
+    }
+    scrollState.y2 = scrollState.y;
+}
+
+function header(){
+    scrollHeader();
+
+    if(scrollState.state){
+        $('.header-b').addClass('active');
+    }else{
+        $('.header-b').removeClass('active');
+    }
+}
+
+$(window).on('scroll', header);
+
+// swiper //
+
+var swiper = new Swiper(".mySwiper", {
+    loop: true,
+    spaceBetween: 10,
+    slidesPerView: 4,
+    freeMode: true,
+    watchSlidesProgress: true,
+});
+var swiper2 = new Swiper(".mySwiper2", {
+    loop: true,
+    spaceBetween: 10,
+    navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+    },
+    thumbs: {
+    swiper: swiper,
+    },
+});
+
+// mobile menu //
 
 const elBtnMenu = document.querySelector('.m-btn-menu');
 const elMenu = document.querySelector('.m-menu');

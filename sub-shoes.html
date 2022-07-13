@@ -8,12 +8,12 @@
     <link rel="icon" type="image/png" href="./resources/icon-32x32.png" sizes="32x32" />
     <link rel="icon" type="image/png" href="./resources/icon-16x16.png" sizes="16x16" />
 
-    <link href="./css/sub-shoes.css" rel="stylesheet">
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script defer src="./script/sub-shoes.js"></script>
     <script defer src="./load/common.js"></script>
     
-    <!-- Link Swiper's CSS -->
+    <link href="./css/sub-shoes.css" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link href="./slide/thumbs-gallery-loop.css" rel="stylesheet">
 </head>
@@ -21,7 +21,7 @@
     
 <header class="header-b"></header>
 
-<!-- mobileeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee -->
+<!-- mobile version -->
 <div class="mobile">
     <header>
         <h1> <a href="./index.html"> NIKE WOMEN </a> </h1>
@@ -302,228 +302,12 @@
             </div>
         </div>
         <div class="product">
-            <ul>
-                <!-- 
-                <li>
-                    <div class="pro-img">
-                        <a class="btn-wish"> wishlist </a>
-                        <a class="product-img"> 
-                            <img src="./resources/02.shoes/02-1/shoes-detail-01.jpg" alt="product-img"> </a>
-                        <span> QUICK VIEW </span>
-                    </div>
-                    <div class="pro-txt">
-                        <p> 여성 신발 </p>
-                        <p> 나이키 TC 7900 </p>
-                        <p><span>139,000</span>원</p>
-                    </div>
-                </li>
-                <li>
-                    <div class="pro-img">
-                        <a class="btn-wish"> wishlist </a>
-                        <a class="product-img"> 
-                            <img src="./resources/02.shoes/02-2/shoes-detail-01.jpg" alt="product-img"> </a>
-                        <span> QUICK VIEW </span>
-                    </div>
-                    <div class="pro-txt">
-                        <p> 여성 신발 </p>
-                        <p> 나이키 에어 포스 1 '07 에센셜 </p>
-                        <p><span>129,000</span>원</p>
-                    </div>
-                </li>
-                <li>
-                    <div class="pro-img">
-                        <a class="btn-wish"> wishlist </a>
-                        <a class="product-img"> 
-                            <img src="./resources/02.shoes/02-3/shoes-detail-01.jpg" alt="product-img"> </a>
-                        <span> QUICK VIEW </span>
-                    </div>
-                    <div class="pro-txt">
-                        <p> 여성 신발 </p>
-                        <p> 나이키 TC 7900 </p>
-                        <p><span>139,000</span>원</p>
-                    </div>
-                </li>
-                <li>
-                    <div class="pro-img">
-                        <a class="btn-wish"> wishlist </a>
-                        <a class="product-img"> 
-                            <img src="./resources/02.shoes/02-4/shoes-detail-01.jpg" alt="product-img"> </a>
-                        <span> QUICK VIEW </span>
-                    </div>
-                    <div class="pro-txt">
-                        <p> 여성 신발 </p>
-                        <p> 에어 조던 1 미드 </p>
-                        <p><span>149,000</span>원</p>
-                    </div>
-                </li>
-                <li>
-                    <div class="pro-img">
-                        <a class="btn-wish"> wishlist </a>
-                        <a class="product-img"> 
-                            <img src="./resources/02.shoes/02-5/shoes-detail-01.jpg" alt="product-img"> </a>
-                        <span> QUICK VIEW </span>
-                    </div>
-                    <div class="pro-txt">
-                        <p> 여성 신발 </p>
-                        <p> 나이키 폰탄카 와플 </p>
-                        <p><span>119,000</span>원</p>
-                    </div>
-                </li>
-                <li>
-                    <div class="pro-img">
-                        <a class="btn-wish"> wishlist </a>
-                        <a class="product-img"> 
-                            <img src="./resources/02.shoes/02-6/shoes-detail-01.jpg" alt="product-img"> </a>
-                        <span> QUICK VIEW </span>
-                    </div>
-                    <div class="pro-txt">
-                        <p> 여성 신발 </p>
-                        <p> 나이키코트 레거시 </p>
-                        <p><span>69,000</span>원</p>
-                    </div>
-                </li> -->
-            </ul>
+            <ul></ul>
         </div>
     </div>
 </main>
 
-<!-- scroll header -->
-<script>
-    let scrollState = {y: 0, y2: 0, state:'down'}
-    
-    function scrollHeader(){
-        scrollState.y = $(window).scrollTop();
-
-        if(scrollState.y > scrollState.y2){
-            scrollState.state = true;
-        }else{
-            scrollState.state = false;
-        }
-        scrollState.y2 = scrollState.y;
-    }
-
-    function header(){
-        scrollHeader();
-
-        if(scrollState.state){
-            $('.header-b').addClass('active');
-        }else{
-            $('.header-b').removeClass('active');
-        }
-    }
-    
-    $(window).on('scroll', header);
-</script>
-
-<div class="popup">
-    <!-- <div class="img">
-
-        <div class="swiper mySwiper2" style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide"><img src="./resources/01.new/01-6/clothes-detail-01.jpg" alt="detail-01"></div>
-                <div class="swiper-slide"><img src="./resources/01.new/01-6/clothes-detail-02.jpg" alt="detail-02"></div>
-                <div class="swiper-slide"><img src="./resources/01.new/01-6/clothes-detail-03.jpg" alt="detail-03"></div>
-                <div class="swiper-slide"><img src="./resources/01.new/01-6/clothes-detail-04.jpg" alt="detail-04"></div>
-                <div class="swiper-slide"><img src="./resources/01.new/01-6/clothes-detail-05.jpg" alt="detail-05"></div>
-            </div>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
-        </div>
-        <div thumbsSlider="" class="swiper mySwiper">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide"><img src="./resources/01.new/01-6/clothes-detail-01.jpg" alt="detail-01"></div>
-                <div class="swiper-slide"><img src="./resources/01.new/01-6/clothes-detail-02.jpg" alt="detail-02"></div>
-                <div class="swiper-slide"><img src="./resources/01.new/01-6/clothes-detail-03.jpg" alt="detail-03"></div>
-                <div class="swiper-slide"><img src="./resources/01.new/01-6/clothes-detail-04.jpg" alt="detail-04"></div>
-                <div class="swiper-slide"><img src="./resources/01.new/01-6/clothes-detail-05.jpg" alt="detail-05"></div>
-            </div>
-        </div>
-    </div>
-
-    <div class="detail">
-        <div class="txt">
-            <p> 여성 우븐 러닝 재킷 AS </p>
-            <p> 나이키 스포츠웨어 숏슬리브 티 </p>
-            <p><span>49,000</span>원</p>
-        </div>
-        <div class="option">
-            <div class="size">
-                <p> 사이즈 </p>
-                <ul>
-                    <li>
-                        <input type="checkbox" id="75(XS)">
-                        <label for="75(XS)"> 75(XS) </label>
-                    </li>
-                    <li>
-                        <input type="checkbox" id="80(S)">
-                        <label for="80(S)"> 80(S) </label>
-                    </li>
-                    <li>
-                        <input type="checkbox" id="85(M)">
-                        <label for="85(M)"> 85(M) </label>
-                    </li>
-                    <li>
-                        <input type="checkbox" id="90(L)">
-                        <label for="90(L)"> 90(L) </label>
-                    </li>
-                    <li>
-                        <input type="checkbox" id="95(XL)">
-                        <label for="95(XL)"> 95(XL) </label>
-                    </li>
-                    <li>
-                        <input type="checkbox" id="100(2XL)">
-                        <label for="100(2XL)"> 100(2XL) </label>
-                    </li>
-                </ul>
-            </div>
-            <div class="color">
-                <p> 색상 </p>
-                <div>
-                    <input type="radio" id="white" checked>
-                    <label for="white"> 화이트 </label>
-                </div>
-            </div>
-            <div class="quantity">
-                <p> 수량 </p>
-                <div>
-                    <div class="qua-res"> 0 </div>
-                    <a class="plus"> + </a> <a class="minus"> - </a>
-                </div>
-            </div>
-        </div>
-        <span class="quick-close"> X </span>
-        <div class="btn">
-            <span> 장바구니 담기 </span>
-            <span> 바로 구매하기 </span>
-        </div>
-    </div> -->
-
-<!-- Swiper JS -->
-<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-
-<!-- Initialize Swiper -->
-<script>
-    var swiper = new Swiper(".mySwiper", {
-        loop: true,
-        spaceBetween: 10,
-        slidesPerView: 4,
-        freeMode: true,
-        watchSlidesProgress: true,
-    });
-    var swiper2 = new Swiper(".mySwiper2", {
-        loop: true,
-        spaceBetween: 10,
-        navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-        },
-        thumbs: {
-        swiper: swiper,
-        },
-    });
-</script>
-
-</div>
+<div class="popup"></div>
 
 <footer>
     <div class="title">
